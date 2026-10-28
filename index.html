@@ -1,0 +1,1121 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>中國附醫急診專科醫師訓練計畫</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="中國醫藥大學附設醫院急診專科醫師訓練計畫（第 15 次修訂，115 年 5 月）互動版">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: 頂部識別帶 + 左側固定導覽（手機改為頂部橫向捲動列）+ 單欄主文；四年藍圖沿用計畫書示意圖的區域配色 */
+:root{
+  --paper:#f4f6f8; --surface:#ffffff; --sunk:#eaeef2;
+  --ink:#14212e; --muted:#566475; --line:#d6dde5;
+  --accent:#a8261d; --accent-ink:#ffffff; --accent-soft:#f8e6e3;
+  --navy:#1f3b5c; --navy-soft:#e3ebf4;
+  --z-trauma:#4f72b8; --z-medical:#5e9a58; --z-critical:#d38c1c; --z-admin:#c4514a; --z-dist:#7d8a96;
+  --ok:#2f7d4a; --mark:#fff1b8;
+  --f-display:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0d141b; --surface:#141e28; --sunk:#1b2733;
+  --ink:#e4ebf2; --muted:#9aa9b8; --line:#283646;
+  --accent:#f0766b; --accent-ink:#1a0c0a; --accent-soft:#3a1c19;
+  --navy:#9bbde3; --navy-soft:#1c2c3e;
+  --z-trauma:#7d9ce0; --z-medical:#86c07f; --z-critical:#e8a845; --z-admin:#e27b73; --z-dist:#8d9aa7;
+  --ok:#6fcf8f; --mark:#5a4a12; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0d141b; --surface:#141e28; --sunk:#1b2733;
+  --ink:#e4ebf2; --muted:#9aa9b8; --line:#283646;
+  --accent:#f0766b; --accent-ink:#1a0c0a; --accent-soft:#3a1c19;
+  --navy:#9bbde3; --navy-soft:#1c2c3e;
+  --z-trauma:#7d9ce0; --z-medical:#86c07f; --z-critical:#e8a845; --z-admin:#e27b73; --z-dist:#8d9aa7;
+  --ok:#6fcf8f; --mark:#5a4a12; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:15.5px;line-height:1.75;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--surface)}
+a{color:var(--navy)}
+h1,h2,h3,h4{text-wrap:balance;margin:0}
+p{margin:0}
+ul,ol{margin:0;padding-left:1.3em}
+li+li{margin-top:.25em}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* ---------- 識別帶 ---------- */
+.masthead{background:var(--surface);border-bottom:1px solid var(--line)}
+.masthead .inner{max-width:1180px;margin:0 auto;padding-block:36px 30px;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:36px;align-items:end}
+.eyebrow{font-size:12.5px;letter-spacing:.12em;color:var(--accent);font-weight:700}
+.masthead h1{font-family:var(--f-display);font-weight:900;font-size:clamp(28px,4.2vw,44px);line-height:1.22;margin-top:10px;letter-spacing:.01em}
+.masthead h1 small{display:block;font-size:.5em;font-weight:600;color:var(--muted);letter-spacing:.06em;margin-bottom:4px}
+.lede{margin-top:16px;max-width:38em;color:var(--muted);font-size:16px}
+.ver{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{display:inline-flex;flex-wrap:wrap;align-items:center;gap:0 6px;border:1px solid var(--line);border-radius:999px;padding:2px 11px;font-size:13px;color:var(--muted);background:var(--surface)}
+.masthead .inner>*{min-width:0}
+.chip b{color:var(--ink);font-weight:700}
+.facts{display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--ink)}
+.fact{padding:12px 4px 10px;border-bottom:1px solid var(--line)}
+.fact:nth-child(odd){border-right:1px solid var(--line);padding-right:14px}
+.fact:nth-child(even){padding-left:14px}
+.fact .n{font-family:var(--f-display);font-weight:900;font-size:30px;line-height:1.1;font-variant-numeric:tabular-nums}
+.fact .n span{font-size:14px;font-family:var(--f-body);font-weight:500;margin-left:3px;color:var(--muted)}
+.fact .l{font-size:13px;color:var(--muted)}
+
+/* ---------- 版面 ---------- */
+.shell{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:232px minmax(0,1fr);gap:44px;padding-block:28px 80px}
+.side{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);align-self:start;max-height:calc(100vh - 32px);overflow:auto;padding-bottom:12px}
+.search{position:relative}
+.search input{width:100%;font:inherit;font-size:14px;padding:8px 12px 8px 34px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);color:var(--ink)}
+.search input:focus{outline:2px solid var(--navy);outline-offset:1px}
+.search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:16px;height:16px;stroke:var(--muted)}
+.results{position:absolute;z-index:40;left:0;right:0;top:calc(100% + 6px);background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:0 10px 30px rgba(10,20,30,.18);max-height:60vh;overflow:auto}
+.results button{display:block;width:100%;text-align:left;font:inherit;background:none;border:0;border-bottom:1px solid var(--line);padding:9px 12px;color:var(--ink);cursor:pointer}
+.results button:hover,.results button:focus{background:var(--sunk);outline:none}
+.results .rs{font-size:12px;color:var(--accent);font-weight:700}
+.results .rt{font-size:14px;font-weight:500}
+.results .rx{font-size:12.5px;color:var(--muted);line-height:1.5}
+.results .none{padding:10px 12px;font-size:13px;color:var(--muted)}
+mark{background:var(--mark);color:inherit;padding:0 1px}
+nav.toc{margin-top:18px}
+nav.toc a{display:flex;gap:10px;align-items:baseline;padding:6px 10px;border-left:2px solid var(--line);text-decoration:none;color:var(--muted);font-size:14.5px}
+nav.toc a .k{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);opacity:.8;min-width:2.2em}
+nav.toc a:hover{color:var(--ink);border-left-color:var(--muted)}
+nav.toc a.on{color:var(--ink);font-weight:700;border-left-color:var(--accent)}
+.side .meta{margin-top:18px;font-size:12.5px;color:var(--muted);line-height:1.6}
+
+main{min-width:0}
+section.sec{padding-top:8px;margin-bottom:64px}
+.sec-h{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:22px}
+.sec-h .k{font-family:var(--f-mono);font-size:13px;color:var(--accent);font-weight:600}
+.sec-h h2{font-family:var(--f-display);font-weight:900;font-size:clamp(23px,2.6vw,29px);line-height:1.3}
+.sec-h .src{margin-left:auto;font-size:12.5px;color:var(--muted);white-space:nowrap}
+h3{font-size:18px;font-weight:700;line-height:1.45}
+h4{font-size:15px;font-weight:700}
+.stack{display:flex;flex-direction:column;gap:18px}
+.prose{max-width:42em}
+.muted{color:var(--muted)}
+.small{font-size:13.5px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;min-width:0}
+.panel h3{margin-bottom:8px}
+.tag{display:inline-block;font-family:var(--f-mono);font-size:11.5px;font-weight:600;padding:1px 7px;border-radius:4px;background:var(--navy-soft);color:var(--navy);white-space:nowrap}
+.tag.red{background:var(--accent-soft);color:var(--accent)}
+.note{font-size:13px;color:var(--muted);margin-top:8px}
+.flash{animation:flash 1.6s ease}
+tr.flash td{animation:flashbg 1.6s ease}
+@keyframes flashbg{0%,40%{background:var(--mark)}}
+@keyframes flash{0%,40%{box-shadow:0 0 0 3px var(--accent)}100%{box-shadow:0 0 0 0 transparent}}
+
+/* 分段按鈕 */
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{font:inherit;font-size:14px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);cursor:pointer;white-space:nowrap}
+.seg button:hover{border-color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink);font-weight:700}
+.seg button:focus-visible,.yr:focus-visible,summary:focus-visible,.copy:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* 統計：五大重症 */
+.range{display:grid;grid-template-columns:7.5em minmax(0,1fr) 6.5em;gap:10px;align-items:center;font-size:14px}
+.range+.range{margin-top:8px}
+.range .track{position:relative;height:12px;background:var(--sunk);border-radius:3px}
+.range .bar{position:absolute;top:0;bottom:0;background:var(--accent);border-radius:3px}
+.range .v{font-family:var(--f-mono);font-size:13px;text-align:right;color:var(--muted)}
+.axis{display:grid;grid-template-columns:7.5em minmax(0,1fr) 6.5em;gap:10px;margin-top:6px;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.axis .ticks{display:flex;justify-content:space-between}
+.mix{display:flex;height:26px;border-radius:4px;overflow:hidden;margin-top:6px}
+.mix div{display:flex;align-items:center;justify-content:center;font-size:12px;color:#fff;font-weight:500;white-space:nowrap;overflow:hidden}
+
+/* 組織圖 */
+.org{display:flex;flex-direction:column;align-items:center;gap:0}
+.org .node{border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:6px 14px;font-size:14px;text-align:center}
+.org .node.key{border-color:var(--accent);color:var(--accent);font-weight:700}
+.org .node.dark{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.org .v{width:1px;height:16px;background:var(--muted)}
+.org .row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+
+/* 六大核心能力 */
+.comp-tabs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+.comp-tabs button{font:inherit;text-align:left;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:var(--r);padding:9px 10px;cursor:pointer;min-width:0}
+.comp-tabs button .c{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);display:block}
+.comp-tabs button .t{font-size:14px;font-weight:700;line-height:1.35;display:block}
+.comp-tabs button[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 -3px 0 var(--accent)}
+.comp-body{margin-top:12px}
+.comp-body ol{column-gap:28px}
+
+/* ---------- 四年藍圖 ---------- */
+.road{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.road-inner{min-width:640px;padding:16px 16px 14px}
+.yrs{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.yr{font:inherit;background:none;border:0;border-left:2px solid var(--ink);text-align:left;padding:2px 10px 8px;cursor:pointer;color:var(--ink)}
+.yr .big{font-family:var(--f-display);font-weight:900;font-size:30px;line-height:1}
+.yr .sub{font-size:12.5px;color:var(--muted);display:block}
+.yr[aria-pressed="true"]{background:var(--accent-soft)}
+.yr[aria-pressed="true"] .big{color:var(--accent)}
+.gates{position:relative;height:26px;margin:2px 0 4px}
+.gate{position:absolute;transform:translateX(-50%);font-size:11.5px;font-weight:700;color:var(--accent);white-space:nowrap;display:flex;flex-direction:column;align-items:center;line-height:1.2}
+.gate::after{content:"";width:2px;height:8px;background:var(--accent);margin-top:2px}
+.lanes{display:grid;grid-template-columns:repeat(16,1fr);row-gap:4px;font-size:13px;font-weight:700}
+.lane{padding:5px 8px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lane.t{background:var(--z-trauma)}.lane.m{background:var(--z-medical)}.lane.c{background:var(--z-critical)}.lane.a{background:var(--z-admin)}
+.lane.d{background:var(--z-dist);font-weight:500}
+.lane.txt{background:none;color:var(--ink);font-weight:500;white-space:normal;font-size:12.5px;line-height:1.4;border-left:2px solid var(--line)}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-size:12.5px;color:var(--muted)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+
+.yd{margin-top:18px}
+.yd-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 18px}
+.yd-head h3{font-family:var(--f-display);font-size:24px;font-weight:900}
+.levels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.lv{border:1px solid var(--line);border-radius:var(--r);padding:10px 14px;background:var(--surface)}
+.lv .k{font-size:12.5px;color:var(--muted)}
+.lv .n{font-family:var(--f-mono);font-size:26px;font-weight:600;line-height:1.2}
+.lv .n small{font-size:13px;color:var(--muted);font-family:var(--f-body);font-weight:400;margin-left:4px}
+.meter{display:flex;gap:3px;margin-top:6px}
+.meter span{flex:1;height:6px;border-radius:2px;background:var(--sunk)}
+.meter span.on{background:var(--accent)}
+.meter span.half{background:linear-gradient(90deg,var(--accent) 50%,var(--sunk) 50%)}
+.yd .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{border:1px solid var(--line);border-radius:4px;padding:2px 9px;font-size:13.5px;background:var(--surface)}
+.gatebox{border:1px solid var(--accent);border-radius:var(--r);padding:14px 18px;background:var(--accent-soft)}
+.gatebox h4{color:var(--accent)}
+.gatebox ul{margin-top:6px}
+
+/* 表格 */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:8px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:12.5px;color:var(--muted);font-weight:700;background:var(--sunk);white-space:nowrap;position:sticky;top:0}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+td.ctr,th.ctr{text-align:center}
+tr.dim td{opacity:.32}
+tr.hit td{background:var(--accent-soft)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.dot.o{background:transparent;border:1.5px solid var(--line)}
+.codes{display:flex;flex-wrap:wrap;gap:4px}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:12px}
+.toolbar .lbl{font-size:13px;color:var(--muted)}
+
+/* 流程 */
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;counter-reset:f}
+.step{border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;background:var(--surface);position:relative}
+.step .when{font-family:var(--f-mono);font-size:12px;color:var(--accent);font-weight:600}
+.step h4{margin-top:2px}
+.step p{font-size:13.5px;color:var(--muted);margin-top:4px;line-height:1.6}
+.step.warn{border-color:var(--accent)}
+.branch{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
+
+/* 會議週曆 */
+.week{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.day{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);min-width:0}
+.day .dh{padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700;font-size:14px;background:var(--sunk)}
+.day ul{list-style:none;padding:8px;margin:0;display:flex;flex-direction:column;gap:6px}
+.day li{margin:0;border-left:3px solid var(--navy);padding:4px 8px;background:var(--navy-soft);border-radius:0 4px 4px 0;font-size:13px;line-height:1.45}
+.day li.mo{border-left-color:var(--accent);background:var(--accent-soft)}
+.day li .tm{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);display:block}
+.day li.empty{background:none;border-left-color:transparent;color:var(--muted)}
+
+/* 摺疊 */
+details{border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+details+details{margin-top:8px}
+summary{cursor:pointer;padding:12px 16px;font-weight:700;list-style:none;display:flex;gap:10px;align-items:baseline}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"＋";font-family:var(--f-mono);color:var(--accent);font-weight:600}
+details[open] summary::before{content:"－"}
+summary .s{font-weight:400;color:var(--muted);font-size:13.5px;margin-left:auto;text-align:right}
+details .db{padding:0 18px 16px 42px}
+details .db h4{margin:10px 0 4px;font-size:14px;color:var(--muted)}
+
+.contact{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 14px;align-items:center;font-size:14.5px}
+.contact .k{color:var(--muted);font-size:13px}
+.copy{font:inherit;font-size:12.5px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:4px;padding:2px 9px;cursor:pointer}
+.links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.lk{display:flex;justify-content:space-between;gap:12px;align-items:center;border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;background:var(--surface);text-decoration:none;color:var(--ink);min-width:0}
+.lk:hover{border-color:var(--navy)}
+.lk .d{font-size:12.5px;color:var(--muted)}
+.lk.off{border-style:dashed;color:var(--muted)}
+.lk .go{font-family:var(--f-mono);color:var(--accent)}
+.annex{columns:2;column-gap:28px;padding:0;list-style:none}
+.annex li{break-inside:avoid;display:grid;grid-template-columns:4.6em minmax(0,1fr) 2.8em;gap:8px;padding:5px 0;border-bottom:1px dotted var(--line);font-size:14px;margin:0}
+.annex .no{color:var(--accent);font-weight:700;font-size:13px}
+.annex .pg{text-align:right;color:var(--muted);font-family:var(--f-mono);font-size:12.5px}
+footer{border-top:1px solid var(--line);padding-block:22px;color:var(--muted);font-size:13px}
+footer .inner{max-width:1180px;margin:0 auto}
+
+/* ---------- 響應式 ---------- */
+@media (max-width:1000px){
+  .comp-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .flow{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  .masthead .inner{grid-template-columns:1fr;gap:22px;padding-block:24px 22px}
+  .shell{grid-template-columns:minmax(0,1fr);gap:0;padding-top:0}
+  .side{min-width:0}
+  .side{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;max-height:none;overflow:visible;background:var(--paper);margin:0 calc(-1 * max(16px,env(safe-area-inset-left,0px))) 18px;padding:10px max(16px,env(safe-area-inset-left,0px)) 8px;border-bottom:1px solid var(--line)}
+  nav.toc{display:flex;overflow-x:auto;gap:4px;margin-top:8px;scrollbar-width:none}
+  nav.toc a{border-left:0;border-bottom:2px solid transparent;white-space:nowrap;padding:4px 8px;font-size:14px}
+  nav.toc a .k{display:none}
+  nav.toc a.on{border-bottom-color:var(--accent)}
+  .side .meta{display:none}
+  .grid2,.grid3,.yd .cols,.links{grid-template-columns:1fr}
+  .levels{grid-template-columns:1fr 1fr 1fr}
+  .week{grid-template-columns:1fr}
+  .annex{columns:1}
+  .sec-h{flex-wrap:wrap}
+  .sec-h .src{margin-left:0;width:100%}
+}
+@media (max-width:520px){
+  .comp-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .flow,.branch{grid-template-columns:1fr}
+  .levels{grid-template-columns:1fr}
+  .range,.axis{grid-template-columns:5.5em minmax(0,1fr) 5.6em}
+  .contact{grid-template-columns:auto minmax(0,1fr)}
+  .contact .copy{grid-column:2;justify-self:start}
+}
+@media print{
+  .side,.search{display:none}
+  .shell{grid-template-columns:1fr}
+  body{background:#fff}
+  details{break-inside:avoid}
+  details:not([open]) .db{display:block}
+}
+</style>
+</head>
+<body>
+
+
+<header class="masthead gutter">
+  <div class="inner">
+    <div>
+      <div class="eyebrow">急診醫學科專科醫師訓練計畫書 · 互動版</div>
+      <h1><small>中國醫藥大學附設醫院</small>急診專科醫師訓練計畫</h1>
+      <p class="lede">以六大核心能力與能力導向醫學教育（CBME）為藍圖，四年循序漸進，培育具備急診醫療服務、教學與研究能力，並能獨立執業、帶領團隊的急診專科醫師。</p>
+      <div class="ver">
+        <span class="chip"><b>第 15 次修訂</b>115 年 5 月</span>
+        <span class="chip">103 年 1 月制訂</span>
+        <span class="chip">依據衛福部及台灣急診醫學會「急診醫學科專科醫師訓練課程基準」</span>
+      </div>
+    </div>
+    <div class="facts" aria-label="訓練環境重點數字">
+      <div class="fact"><div class="n">15–16<span>萬人次</span></div><div class="l">每年急診服務量</div></div>
+      <div class="fact"><div class="n">40<span>位</span></div><div class="l">急診專任專科主治醫師</div></div>
+      <div class="fact"><div class="n">4<span>年</span></div><div class="l">訓練期程（含 PGY 可折抵）</div></div>
+      <div class="fact"><div class="n">188–192<span>小時／月</span></div><div class="l">本科臨床學習時數</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="shell gutter">
+  <aside class="side">
+    <div class="search" role="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="搜尋計畫書內容，例如 EPA、超音波" autocomplete="off" aria-label="搜尋計畫書內容">
+      <div class="results" id="results" hidden></div>
+    </div>
+    <nav class="toc" id="toc" aria-label="章節導覽">
+      <a href="#overview"><span class="k">01</span>計畫簡介</a>
+      <a href="#goals"><span class="k">02</span>宗旨與核心能力</a>
+      <a href="#roadmap"><span class="k">03</span>四年訓練藍圖</a>
+      <a href="#curriculum"><span class="k">04</span>訓練課程</a>
+      <a href="#assessment"><span class="k">05</span>學習評估</a>
+      <a href="#gates"><span class="k">06</span>晉升檢核與 Case Log</a>
+      <a href="#conferences"><span class="k">07</span>教學會議</a>
+      <a href="#faculty"><span class="k">08</span>師資與組織</a>
+      <a href="#support"><span class="k">09</span>學員權益與輔導</a>
+      <a href="#partner"><span class="k">10</span>合作訓練</a>
+      <a href="#annex"><span class="k">11</span>附件與相關連結</a>
+    </nav>
+    <p class="meta">內容依據《中國醫藥大學附設醫院急診專科醫師訓練計畫書》第 15 次修訂版整理。各段標示對應之計畫書章節，完整條文以計畫書為準。</p>
+  </aside>
+
+  <main id="main">
+
+  <!-- 01 計畫簡介 -->
+  <section class="sec" id="overview">
+    <div class="sec-h"><span class="k">01</span><h2>計畫簡介</h2><span class="src">計畫書第 1 章</span></div>
+    <div class="stack">
+      <div class="prose" data-s="計畫名稱與依據">
+        <p>本計畫全名為「中國醫藥大學附設醫院急診專科醫師訓練計畫」，依據衛生福利部與台灣急診醫學會頒布之「急診醫學科專科醫師訓練課程基準」制定，以核心能力導向教學（CBME）為基本概念。訓練期程以四年為原則，必要時得延長，直到受訓住院醫師具備成為專科醫師之必要核心能力。計畫內容每年依成效評估結果修訂。</p>
+      </div>
+      <div class="grid2">
+        <div class="panel" data-s="訓練單位 醫學中心 重度級急救責任醫院">
+          <h3>訓練單位</h3>
+          <p class="small">醫院評鑑優等之醫學中心，教學醫院評鑑合格、重度級急救責任醫院，並為美國心臟協會（AHA）認可之心血管急救訓練中心。民國 81 年 6 月擴編為急診部，86 年 10 月急診大樓啟用，97 年 11 月急重症醫療中心大樓啟用。</p>
+          <h4 style="margin-top:14px">病人組成</h4>
+          <div class="mix" role="img" aria-label="非外傷 55-60%，外傷 20-25%，兒科 15-20%">
+            <div style="flex:57.5;background:var(--z-medical)">非外傷 55–60%</div>
+            <div style="flex:22.5;background:var(--z-trauma)">外傷 20–25%</div>
+            <div style="flex:17.5;background:var(--z-critical)">兒科 15–20%</div>
+          </div>
+          <p class="note">檢傷一級約 3–4%、二級約 15–18%、三級約 65–70%。每月 119 送醫平均 1,500 人次以上，院際轉診 800–900 人次。</p>
+        </div>
+        <div class="panel" data-s="五大重症 年例數 腦中風 外傷 冠心症 敗血性休克 OHCA">
+          <h3>五大重症年例數</h3>
+          <div id="crit"></div>
+          <div class="axis"><span></span><div class="ticks mono"><span>0</span><span>200</span><span>400</span><span>600</span></div><span></span></div>
+          <p class="note">計畫書所列為範圍值，橫條標示區間上下限。不論嚴重度或就醫數量，均為大台中地區最多之急診。</p>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="panel" data-s="訓練環境 訓練場所 急診區域 超音波 臨床技能中心 OSCE">
+          <h3>訓練環境</h3>
+          <ul class="small">
+            <li>急診常設訓練區域：內科區、外科區、急救區、外傷搶救區、觀察區、兒科急診區、急診後送病房區、五官科診療區、精神科會談室、婦產科診療室、戶外發燒篩檢區、負壓隔離病房。</li>
+            <li>急診專用超音波機 6 台；臨床技能中心提供外傷、急救、ACLS、團隊訓練等模擬教具；OSCE 考場具認證標準病人與教師群。</li>
+            <li>部內獨立會議室（含 IRS 互動系統），住院醫師有個人辦公桌椅與置物櫃。</li>
+            <li>分級分區分科看診，住院醫師 24 小時均有主治醫師陪同看診。另有專科護理師 16 名、護理師 70 名。</li>
+          </ul>
+        </div>
+        <div class="panel" data-s="計畫精神 全人照顧 終生學習 紀律 倫理 互助 卓越">
+          <h3>計畫精神</h3>
+          <ol class="small">
+            <li>培育具備全人照顧能力之急診專科醫師</li>
+            <li>培育具備自我學習與終生學習觀念與態度的急診醫師</li>
+            <li>培育紀律、倫理、互助與卓越急診團隊</li>
+            <li>培育具備急診核心價值的急診專科醫師</li>
+          </ol>
+          <h4 style="margin-top:14px">部門組織</h4>
+          <div class="org small" style="margin-top:8px">
+            <div class="node dark">急診部</div><div class="v"></div>
+            <div class="node">主治醫師會議<span class="muted">（＋卓越發展小組）</span></div><div class="v"></div>
+            <div class="node">自主管理委員會</div><div class="v"></div>
+            <div class="row"><div class="node">研究發展委員會</div><div class="node key">教育訓練委員會</div><div class="node">品質管理委員會</div><div class="node">專科護理師會議</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 宗旨與核心能力 -->
+  <section class="sec" id="goals">
+    <div class="sec-h"><span class="k">02</span><h2>宗旨與核心能力</h2><span class="src">計畫書第 2、9 章</span></div>
+    <div class="stack">
+      <div class="grid2">
+        <div class="panel" data-s="宗旨 目標 CBME">
+          <h3>宗旨與目標</h3>
+          <p class="small"><b>宗旨：</b>培育具備急診醫療服務、教學、研究與六大核心能力之急診專科醫師。</p>
+          <p class="small" style="margin-top:6px"><b>目標：</b>以六大核心能力為基礎，依急診能力導向醫學教育（CBME）精神，培養具備獨立執業能力、臨床推理能力、團隊領導與合作能力及持續自我反思能力之急診專科醫師。</p>
+        </div>
+        <div class="panel" data-s="四大核心價值 組織核心文化">
+          <h3>急診四大核心價值</h3>
+          <ol class="small">
+            <li>能以病人最大利益為考量</li>
+            <li>能依專業知識為病人安排最適切處置與動向</li>
+            <li>能持續投入緊急醫療服務品質提升</li>
+            <li>能持續爭取急診優質工作與服務環境</li>
+          </ol>
+          <p class="note">組織核心文化：紀律、倫理、互助、卓越。</p>
+        </div>
+      </div>
+      <div class="panel" data-s="策略 PDCA 360 度評估 模擬 里程碑 EPA">
+        <h3>訓練策略</h3>
+        <ol class="small">
+          <li>循序漸進建立以六大核心能力及專業核心能力為導向之訓練課程。</li>
+          <li>提供充沛教學資源、良好教學環境與適當師生比例。</li>
+          <li>涵蓋內、外、婦、兒、神經、精神、眼科、耳鼻喉科，並強化緊急醫療救護、災難醫學、急診超音波、毒物學、重症照護等急診特有領域。</li>
+          <li>融入團隊照護精神，強化專業、品德與倫理教育。</li>
+          <li>多元評估：360 度評估、模擬醫學訓練、學習里程碑（Milestones）與可信賴專業活動（EPAs）評核，並由導師全程協助學習歷程。</li>
+          <li>定期依評量結果、核心課程成效、R day 評量、師生回饋與里程碑進展，檢視訓練目標與評量制度，形成持續改善之 PDCA 循環。</li>
+        </ol>
+      </div>
+      <div data-s="六大核心能力 訓練目標 訓練方式">
+        <h3 style="margin-bottom:10px">六大核心能力</h3>
+        <div class="comp-tabs" id="compTabs" role="group" aria-label="選擇核心能力"></div>
+        <div class="panel comp-body" id="compBody"></div>
+      </div>
+      <div class="panel" data-s="急診專業核心能力 EM Model Acuity Physician task Procedural skills">
+        <h3>急診專業核心能力：急診醫學模式（EM Model）</h3>
+        <p class="small">依急診病人的特殊性質形成急診看診邏輯，融合三個要素，於照護病人時同時整合運用：</p>
+        <div class="grid3" style="margin-top:10px">
+          <div class="pill" style="padding:10px 12px"><b>病人急迫性</b><br><span class="muted small">Acuity 之辨識與評估</span></div>
+          <div class="pill" style="padding:10px 12px"><b>醫師任務</b><br><span class="muted small">Physician task 之正確執行</span></div>
+          <div class="pill" style="padding:10px 12px"><b>知識與技能清單</b><br><span class="muted small">醫學知識、病人照護及操作型技能</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 四年訓練藍圖 -->
+  <section class="sec" id="roadmap">
+    <div class="sec-h"><span class="k">03</span><h2>四年訓練藍圖</h2><span class="src">計畫書 9.2、10.3、10.8；附件三至六、二十九</span></div>
+    <p class="prose small muted" style="margin-bottom:14px">點選年級查看該年度的臨床區域、外訓科別、應達能力等級、課綱評核與晉升條件。</p>
+    <div class="road">
+      <div class="road-inner">
+        <div class="gates" aria-hidden="true">
+          <div class="gate" style="left:18.75%">晉升內科區檢核</div>
+          <div class="gate" style="left:50%">晉升急救區檢核</div>
+          <div class="gate" style="left:75%">總醫師晉升</div>
+          <div class="gate" style="left:96%">完訓檢核</div>
+        </div>
+        <div class="yrs" id="yrs" role="group" aria-label="選擇年級"></div>
+        <div class="lanes" style="margin-top:8px" aria-label="臨床區域與外訓配置示意">
+          <div class="lane t" style="grid-column:1/4">外傷區</div><div class="lane m" style="grid-column:4/9">內科區</div><div class="lane m" style="grid-column:9/17;opacity:.7">內科區</div>
+          <div class="lane c" style="grid-column:9/13">重症區（急救室）</div><div class="lane c" style="grid-column:13/17;filter:saturate(1.3) brightness(.92)">重症區</div>
+          <div class="lane a" style="grid-column:13/17">教學行政（總醫師）</div>
+          <div class="lane txt" style="grid-column:1/5">ENT、OPH、GYN、PS 外訓</div><div class="lane txt" style="grid-column:5/9">精神、神內外訓</div><div class="lane txt" style="grid-column:9/13">ICU 外訓、偏遠醫療</div><div class="lane txt" style="grid-column:13/17">行政管理、選修</div>
+          <div class="lane d" style="grid-column:1/17">兒科急診（分散式訓練）</div>
+          <div class="lane d" style="grid-column:1/17">毒物科、災難、EMS、超音波（分散式訓練）</div>
+        </div>
+        <div class="legend"><span><i style="background:var(--z-trauma)"></i>外傷區</span><span><i style="background:var(--z-medical)"></i>內科區</span><span><i style="background:var(--z-critical)"></i>重症區</span><span><i style="background:var(--z-admin)"></i>教學行政</span><span><i style="background:var(--z-dist)"></i>分散式訓練</span></div>
+      </div>
+    </div>
+    <div class="yd" id="yd" aria-live="polite"></div>
+
+    <div class="panel" style="margin-top:22px" data-s="急救室授權與補救流程 資格考 延訓 附件二十九">
+      <h3>急救室授權與補救流程</h3>
+      <p class="small muted">附件二十九。R2 下半年起逐步評估是否授權於急救室擔任一線主責。</p>
+      <div class="flow" style="margin-top:12px">
+        <div class="step"><div class="when">R2 · 2–4 月</div><h4>急救室學習班</h4><p>每次學習班結束後，由當班主治醫師給予回饋紀錄。</p></div>
+        <div class="step"><div class="when">R2 · 5 月</div><h4>急救室資格考</h4><p>依模擬考結果，輔以學習班回饋，判定可否晉升正式班。</p></div>
+        <div class="step"><div class="when">R2 · 6–7 月</div><h4>未通過者續上學習班</h4><p>7 月 20 日左右教委會臨時會議再評核，需 5 次學習班主治醫師評核通過。</p></div>
+        <div class="step"><div class="when">R3 · 8 月</div><h4>急救室正式班</h4><p>通過者排入一線主責 C 班；如有能力不足（3 位主治醫師提出），回到學習班。</p></div>
+      </div>
+      <div class="branch">
+        <div class="step"><div class="when">R3 · 每月教委會</div><h4>針對不足能力加強</h4><p>配合 EPA 加強練習，收集 4 位不同主治醫師評核特定能力達 Level 3 即通過，隔月排正式班。</p></div>
+        <div class="step warn"><div class="when">R3 · 4 月</div><h4>綜合能力評核</h4><p>綜合學習班評核、R3 期中 CCC 與急診醫學會期中評量；未通過須延訓一年。R4 12 月前可主動申請一次再評核（需 4 位主治醫師評核達 Level 4 以上等資料）。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 訓練課程 -->
+  <section class="sec" id="curriculum">
+    <div class="sec-h"><span class="k">04</span><h2>訓練課程</h2><span class="src">計畫書第 10 章</span></div>
+    <div class="stack">
+      <div class="grid2">
+        <div class="panel" data-s="集中式訓練 本科訓練 外訓 輪訓 夜班">
+          <h3>集中式訓練 <span class="tag">一個月或連續一週以上</span></h3>
+          <h4 style="margin-top:8px">本科訓練</h4>
+          <ul class="small">
+            <li>每月 18–20 班，每班 8 或 12 小時，合計 188–192 小時。</li>
+            <li>臨床學習平均分散於日夜班及假日班；年平均夜班時數不大於白班，亦不低於總訓練時數四分之一。</li>
+            <li>涵蓋成人急診（含外傷、非外傷及重症）、毒物科、急診管理與行政，並排定 Tintinalli's Emergency Medicine 研讀進度。</li>
+          </ul>
+          <h4 style="margin-top:10px">外訓／輪訓</h4>
+          <p class="small">神經內科、兒科急診、兒科學、眼科、耳鼻喉科、婦產科、精神科、外科學（外傷、傷口照護）、重症醫學等，可擴及偏遠地區醫院。由該科指導老師評估學習目標、勝任能力與里程碑，並於 CCC 學習歷程回顧中整合輪訓經驗。</p>
+        </div>
+        <div class="panel" data-s="分散式訓練 影像 超音波 EMS 災難 每月 5 天">
+          <h3>分散式訓練 <span class="tag red">每月 5 天以上</span></h3>
+          <p class="small">無相對應專科可外訓、或分散在各年級更適當的科目，採分散式訓練，包括影像診斷學、超音波、緊急醫療救護系統、災難醫學等；場所可擴及學會、其他醫院、消防局、救護分隊或演習場地。</p>
+          <ul class="small" style="margin-top:6px">
+            <li>住院醫師與導師共同安排課程，訓練內容及目標由該科與導師共同訂定。</li>
+            <li>完成階段目標後，由導師協同課程負責人進行課綱評估。</li>
+            <li>114 學年度起入訓者，學習時數依「科內不固定型、科外固定型、科外不固定型」三類認定，並與 2025 年新制里程碑對接。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="panel" data-s="超音波 必要案例 FAST 主動脈 DOPS">
+          <h3>超音波</h3>
+          <p class="small">每年基礎與進階集中課程各一次，著重床邊實作，以 modified DOPS 評核。</p>
+          <p class="small" style="margin-top:6px"><b>必要案例（各 10 例）：</b>主動脈、心包膜、FAST、肝膽急症、產科、泌尿道、深部靜脈栓塞、超音波輔助腹水或胸水抽吸。</p>
+        </div>
+        <div class="panel" data-s="影像醫學 核心案例 放射科聯合討論會">
+          <h3>影像醫學</h3>
+          <p class="small">線上判讀由主治醫師或總醫師協助；每月放射科聯合討論會、每季判讀教學。考專科前須參加學會基礎及進階急診影像課程各一次。</p>
+          <p class="small" style="margin-top:6px"><b>核心案例：</b>中樞神經、胸部、心血管、腹部、肌肉骨骼等 26 類，另有選擇案例。</p>
+        </div>
+        <div class="panel" data-s="緊急醫療救護 EMS 隨隊出勤 災難醫學 演習">
+          <h3>EMS 與災難醫學</h3>
+          <p class="small"><b>EMS：</b>學會分散式課程 8 小時、消防局隨隊出勤 16 小時、EMS 月會 12 主題共 24 小時。</p>
+          <p class="small" style="margin-top:6px"><b>災難：</b>基礎必修 14 小時、選修 2 小時，並參與大量傷患、醫院應變、桌上模擬、核生化演習各一次。</p>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="panel" data-s="醫學模擬訓練 高擬真 必要案例">
+          <h3>醫學模擬訓練</h3>
+          <p class="small">資淺住院醫師（R2）升資深前安排高擬真情境訓練，結合護理人員訓練；資深住院醫師（R4）於期中評量前訓練複雜情境溝通，例如告知壞消息、告知醫療錯誤、團隊紛爭。</p>
+          <p class="small" style="margin-top:6px"><b>必要案例：</b>急性胸痛、休克、呼吸道急症、OHCA/IHCA、重大創傷、告知壞消息與醫療錯誤、團隊紛爭。</p>
+        </div>
+        <div class="panel" data-s="偏遠地區急診醫療 輪訓 合作醫院">
+          <h3>偏遠地區急診醫療</h3>
+          <p class="small">完成 24 個月訓練後輪訓偏遠地區醫院急診，每院每月原則一位，由當地急診專任主治醫師監督。</p>
+          <p class="small" style="margin-top:6px"><b>合作醫院：</b>為恭紀念醫院、中國醫藥大學北港附設醫院、衛福部南投醫院、埔里基督教醫院、中國醫藥大學新竹附設醫院。</p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="panel" data-s="會診訓練 緊急會診 一般急會診 電話會診 困難會診">
+          <h3>會診訓練</h3>
+          <p class="small">會診他科（緊急會診 10 分鐘內到、一般急會診 30 分鐘內到、電話會診）、接受會診（外訓時擔任該科第一線照會）、每季困難會診個案討論。</p>
+        </div>
+        <div class="panel" data-s="病歷寫作 病歷品質 每月三份">
+          <h3>病歷寫作</h3>
+          <p class="small">部門病歷書寫標準；病歷品質提升小組每兩個月檢討教學；每月隨機抽三份病歷由導師考核，列入年度考核。</p>
+        </div>
+        <div class="panel" data-s="實證醫學 CAT PICO Power Cam 數位學習 翻轉教室">
+          <h3>實證醫學與數位學習</h3>
+          <p class="small">每月第三週週五進行 CAT 期刊評讀；核心課程逐步錄製 Power Cam 放上醫教會數位學習系統，每半年會考。</p>
+        </div>
+      </div>
+
+      <div data-s="核心課程 24 項 對應次核心能力">
+        <div class="toolbar">
+          <h3 style="margin-right:auto">核心課程與對應次核心能力 <span class="muted small">（共 24 項）</span></h3>
+          <span class="lbl">依核心能力篩選</span>
+          <div class="seg" id="ccFilter" role="group" aria-label="依核心能力篩選"></div>
+        </div>
+        <div class="tbl-wrap"><table id="ccTable"><thead><tr><th class="num">#</th><th>課程名稱</th><th>對應次核心能力</th></tr></thead><tbody></tbody></table></div>
+        <p class="note">R1–R2 參加；R3–R4 可擔任助教。教委會每年 6 月排定下年度核心課程，並因應 2025 年新制里程碑盤點調整課程內容。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 學習評估 -->
+  <section class="sec" id="assessment">
+    <div class="sec-h"><span class="k">05</span><h2>學習評估</h2><span class="src">計畫書第 9、12 章</span></div>
+    <div class="stack">
+      <div class="panel" data-s="評估架構 形成性評估 總結性評量 CCC">
+        <h3>評估架構</h3>
+        <p class="small">日常工作由教師與導師監測六大核心能力；每月評估學習歷程；輪訓與分散式科目由該科主治醫師評估後，經導師及計畫主持人簽核。教委會<b>每半年召開臨床能力委員會（CCC）</b>，整合各項資料進行總體評量，並作為晉升、臨床監督與漸進式授權之依據。</p>
+        <div class="tbl-wrap" style="margin-top:12px">
+          <table>
+            <thead><tr><th>評估工具</th><th>評估重點</th><th>方式與頻率</th></tr></thead>
+            <tbody>
+              <tr data-s="EM Model CODE 核心個案 Globe Rating Scale"><td><b>EM Model · CODE</b></td><td>處理個別疾病的能力（核心個案 Case Log）</td><td>臨床班遇核心個案時請教師直接觀察，Global Rating Scale 1–7 分，並評定執行能力 Level 1–5</td></tr>
+              <tr data-s="Procedure Log 核心技術"><td><b>Procedure Log</b></td><td>核心技術操作</td><td>同上，教師直接觀察並即時回饋</td></tr>
+              <tr data-s="Milestone case based shift based"><td><b>Milestones</b></td><td>處理病人的整體能力</td><td>Case based（教學急診選定個案）與 Shift based（當班教師評估整班表現）</td></tr>
+              <tr data-s="EPA 可信賴專業活動"><td><b>EPAs</b></td><td>可被信任獨立執行的醫療行為</td><td>導入學會 16 項課綱，由課綱負責教師評核</td></tr>
+              <tr data-s="R day 口試 影像判讀 情境決策"><td><b>R day</b></td><td>時間壓力與不確定情境下的臨床推理、風險評估與處置思路</td><td>114 年度起實施；標準化情境、口試、影像判讀，作為 CCC 討論的補充節點</td></tr>
+              <tr data-s="多來源回饋 MSF 360"><td><b>多來源回饋（MSF）</b></td><td>優點行為與期待改變之行為</td><td>固定期間收集主治醫師與其他職類觀點</td></tr>
+              <tr data-s="輪訓 分散式 三階段評核 基礎 進階 高階"><td><b>輪訓／分散式科目</b></td><td>各科課綱評核</td><td>基礎 → 進階 → 高階三階段；80% 達「良」以上可接續進階，R3 結束前可申請高階，全部達優良以上始完成</td></tr>
+              <tr data-s="專業知識 筆試 期終評量 教科書"><td><b>專業知識</b></td><td>急診專科考題</td><td>每半年筆試、每月追蹤教科書進度、每年期終學習評量</td></tr>
+              <tr data-s="教學能力 研究能力 晨會 PBL"><td><b>教學與研究能力</b></td><td>帶領資淺學員、主持會議、研究參與</td><td>資深住院醫師主持晨會、參與 PBL 教學；評估期刊報告評論與論文發表</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel" data-s="Level 定義 里程碑 Level 1-5 EPA 信賴等級">
+        <div class="toolbar" style="margin-bottom:6px">
+          <h3 style="margin-right:auto">等級定義</h3>
+          <div class="seg" id="lvSeg" role="group" aria-label="選擇量尺"><button aria-pressed="true" data-k="ms">學習里程碑</button><button aria-pressed="false" data-k="epa">EPA／EM Model</button></div>
+        </div>
+        <div id="lvBody"></div>
+        <p class="note" id="lvNote"></p>
+      </div>
+
+      <div class="grid2">
+        <div class="panel" data-s="臨床監督 漸進式授權">
+          <h3>臨床監督與漸進式授權</h3>
+          <ul class="small">
+            <li>分層漸進：依訓練階段與能力進展，在主治醫師督導下逐步增加病人照護、臨床決策與技術執行之責任。</li>
+            <li>監督形式包含現場即時監督、床邊觀察、處置討論、交班確認與形成性回饋。</li>
+            <li>高風險或重症照護，需完成指定能力評估與督導確認後，始得逐步授權獨立執行。</li>
+            <li>需進一步支持者，安排個別化教學、增加直接觀察與回饋。</li>
+          </ul>
+        </div>
+        <div class="panel" data-s="新版里程碑 27 項 2025">
+          <h3>里程碑版本過渡</h3>
+          <p class="small">台灣急診醫學會於 2025 年 5 月公布新版里程碑，本計畫將由現行 23 項次核心能力（228 項評核項目），逐步過渡至新版 27 項次核心能力，補足資訊判讀、臨床倫理與跨文化溝通等面向。</p>
+          <p class="small" style="margin-top:6px">在訓練基準規範時間內達到 Level 4 者，得申請榮譽假；四年內未達 Level 4 者，不得申請報考專科醫師。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 晉升檢核 -->
+  <section class="sec" id="gates">
+    <div class="sec-h"><span class="k">06</span><h2>晉升檢核與 Case Log</h2><span class="src">附件三至六、十八</span></div>
+    <div class="stack">
+      <div data-s="晉升檢核 Procedure CODE Case Log 附件三 附件四 附件五 附件六">
+        <div class="toolbar">
+          <span class="lbl">選擇檢核關卡</span>
+          <div class="seg" id="gateSeg" role="group" aria-label="選擇檢核關卡"></div>
+        </div>
+        <div class="gatebox" id="gateInfo"></div>
+      </div>
+      <div class="grid2">
+        <div>
+          <div class="toolbar"><h3 style="margin-right:auto">Procedure Log <span class="muted small">23 項</span></h3><label class="small"><input type="checkbox" id="onlyReqP"> 只顯示本關卡項目</label></div>
+          <div class="tbl-wrap"><table id="procT"><thead><tr><th class="num">#</th><th>技術項目</th><th class="ctr" title="晉升內科區">內</th><th class="ctr" title="晉升急救室">急</th><th class="ctr" title="升總醫師">總</th><th class="ctr" title="完訓">完</th></tr></thead><tbody></tbody></table></div>
+        </div>
+        <div>
+          <div class="toolbar"><h3 style="margin-right:auto">CODE Case Log <span class="muted small">40 項</span></h3><label class="small"><input type="checkbox" id="onlyReqC"> 只顯示本關卡項目</label></div>
+          <div class="tbl-wrap" style="max-height:640px;overflow:auto"><table id="codeT"><thead><tr><th class="num">#</th><th>核心個案</th><th class="ctr">內</th><th class="ctr">急</th><th class="ctr">總</th><th class="ctr">完</th></tr></thead><tbody></tbody></table></div>
+        </div>
+      </div>
+      <p class="note">表頭「內／急／總／完」分別代表晉升內科區、晉升急救室、升總醫師、完訓檢核。實心圓點為該關卡應評核項目。</p>
+
+      <div data-s="急診基本技術 病例數 附件十八 氣管內管 中央靜脈導管">
+        <div class="toolbar">
+          <h3 style="margin-right:auto">急診基本技術及病例數 <span class="muted small">附件十八</span></h3>
+          <span class="lbl">完成層級</span>
+          <div class="seg" id="skSeg" role="group" aria-label="依完成層級篩選"></div>
+        </div>
+        <div class="tbl-wrap"><table id="skT"><thead><tr><th>類別</th><th>技術項目</th><th class="num">案例數</th><th class="ctr">完成層級</th></tr></thead><tbody></tbody></table></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 教學會議 -->
+  <section class="sec" id="conferences">
+    <div class="sec-h"><span class="k">07</span><h2>教學會議</h2><span class="src">計畫書第 13 章</span></div>
+    <div class="stack">
+      <div data-s="教學會議 晨會 醫療週會 聯合討論會 週曆">
+        <div class="toolbar">
+          <h3 style="margin-right:auto">一週會議排程</h3>
+          <span class="lbl">月中週次</span>
+          <div class="seg" id="wkSeg" role="group" aria-label="選擇月中週次"></div>
+        </div>
+        <div class="week" id="week"></div>
+        <p class="note"><span class="tag">藍色</span> 每週固定會議　<span class="tag red">紅色</span> 該週次的每月會議。ICU 聯合討論會為隔月舉行。</p>
+      </div>
+      <div class="grid2">
+        <div class="panel" data-s="醫療週會 病例報告 Health care matrix 死亡病例討論 醫療品質">
+          <h3>醫療週會內容</h3>
+          <ul class="small">
+            <li><b>病例報告</b>（20 分鐘）：含討論、take home message 與 Q&amp;A，並以 Health care matrix 進行六大核心能力自評。</li>
+            <li><b>核心課程教學</b>（30 分鐘）</li>
+            <li><b>病歷寫作教學</b>：每兩個月一次，每半年每位住院醫師至少接受一次評估。</li>
+            <li><b>期刊新知研討會</b>：每月一次，30–40 分鐘。</li>
+            <li><b>醫學倫理與法律討論</b>：每月一次，30 分鐘。</li>
+            <li><b>死亡病例討論、醫療品質討論</b>：每月最後一週週四，各 30 分鐘。</li>
+            <li><b>次專長研究與發展</b>：每月 1–2 次。</li>
+          </ul>
+        </div>
+        <div class="panel" data-s="中區住院醫師聯合教學會議 行政品管會議">
+          <h3>跨院與行政會議</h3>
+          <ul class="small">
+            <li><b>中區住院醫師教學聯合會</b>：由本部發起，每月一次輪流於中區各醫學中心舉行，每次 3–4 小時；所有住院醫師均須參加，該時段臨床工作由主治醫師負責。</li>
+            <li><b>行政品管會議</b>：每月最後一週週四 11:00，醫師、護理、放射、檢驗、批價、資訊、社工、轉診、兒科代表出席，總醫師為當然住院醫師代表。</li>
+            <li><b>品質監測</b>：AMI、腦中風、重大外傷、嚴重敗血症、AAD、OHCA/IHCA 等處置時效統計，有疑慮者提出討論。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 師資與組織 -->
+  <section class="sec" id="faculty">
+    <div class="sec-h"><span class="k">08</span><h2>師資與組織</h2><span class="src">計畫書第 4–7、16 章；附件十二</span></div>
+    <div class="stack">
+      <div class="grid2">
+        <div class="panel" data-s="訓練計畫執行架構 醫學教育委員會">
+          <h3>訓練計畫執行架構</h3>
+          <div class="org small" style="margin-top:10px">
+            <div class="node">醫院醫學教育委員會</div><div class="v"></div>
+            <div class="node">主任</div><div class="v"></div>
+            <div class="node key">急診部教育委員會</div><div class="v"></div>
+            <div class="node dark">住院醫師訓練計畫主持人</div><div class="v"></div>
+            <div class="row"><div class="node">導師會議</div><div class="node">導師群</div><div class="node">教師群</div></div><div class="v"></div>
+            <div class="node">受訓住院醫師</div>
+          </div>
+        </div>
+        <div class="panel" data-s="教育委員會 PEC Program Evaluation Committee 每月">
+          <h3>急診部教育委員會</h3>
+          <p class="small">部門教育訓練之最高決策單位，每月開會一次。由各教育訓練課程負責人為當然委員，另有一般委員 5–7 人及受訓學員代表 1–3 人，任期兩年。</p>
+          <p class="small" style="margin-top:6px">每年 7 月前審核住院醫師晉升、評估計畫適當性、評核主持人／導師／教師適任性，並選拔最佳導師、最佳教師及最優住院醫師。同時負責年度計畫整體評估，等同國際制度之 <b>Program Evaluation Committee（PEC）</b>。</p>
+        </div>
+      </div>
+
+      <div data-s="計畫主持人 協同主持人 導師 教師 課綱負責教師 教學助理 資格 職責">
+        <h3 style="margin-bottom:10px">各角色資格與職責</h3>
+        <div id="roles"></div>
+      </div>
+
+      <div data-s="師資 主治醫師 專長 附件十二">
+        <div class="toolbar">
+          <h3 style="margin-right:auto">急診醫學部師資 <span class="muted small" id="facCount"></span></h3>
+          <span class="lbl">依專長篩選</span>
+          <div class="seg" id="facSeg" role="group" aria-label="依專長篩選"></div>
+        </div>
+        <div class="tbl-wrap"><table id="facT"><thead><tr><th>姓名</th><th>職稱</th><th>教職</th><th class="num">專科年資</th><th>專長</th></tr></thead><tbody></tbody></table></div>
+        <p class="note">依附件十二（115 年 5 月更新）。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 學員權益與輔導 -->
+  <section class="sec" id="support">
+    <div class="sec-h"><span class="k">09</span><h2>學員權益與輔導</h2><span class="src">計畫書第 11、14、15 章</span></div>
+    <div class="stack">
+      <div class="grid3">
+        <div class="panel" data-s="工時規定 住院醫師勞動權益 13 小時 10 小時 234 小時">
+          <h3>工時規定</h3>
+          <ul class="small">
+            <li>每日正常工時不超過 13 小時</li>
+            <li>兩次值勤間至少間隔 10 小時</li>
+            <li>每四週正常工時不超過 234 小時，延長不超過 320 小時</li>
+          </ul>
+          <p class="note">依衛福部「住院醫師勞動權益保障及工作時間指引」。</p>
+        </div>
+        <div class="panel" data-s="年休 榮譽假 7-14 天">
+          <h3>年休制度</h3>
+          <ul class="small">
+            <li>依職級每年 7–14 天，結算切點 7 月 31 日</li>
+            <li>學習成效良好者經教委會通過，榮譽假最高 14 天</li>
+            <li>有精神壓力、倦怠者可提教委會討論彈性年休</li>
+            <li>具教育意義之課程、會議、外派任務可申請休假</li>
+          </ul>
+        </div>
+        <div class="panel" data-s="職前訓練 三天">
+          <h3>職前訓練</h3>
+          <p class="small">新進住院醫師到職時安排三天職前訓練，涵蓋計畫簡介、六大核心能力與 EM Model、Milestones 與 Case Log、急診資訊系統、學習須知、醫病溝通與糾紛預防、次專長介紹、超音波與傷口處理等，並安排認識導師座談。</p>
+        </div>
+      </div>
+
+      <div class="panel" data-s="申訴 申訴辦法 3 日 7 日">
+        <h3>申訴流程</h3>
+        <p class="small muted">口頭或書面申訴皆可，由教學助理協助完成申訴單；所有申訴案件均保障申訴人不受干擾或傷害。</p>
+        <div class="flow" style="margin-top:12px">
+          <div class="step"><div class="when">申訴對象</div><h4>住院醫師、教師、同仁或他部門</h4><p>由導師先協助處理</p></div>
+          <div class="step"><div class="when">申訴對象</div><h4>導師</h4><p>由計畫主持人先協助處理</p></div>
+          <div class="step"><div class="when">申訴對象</div><h4>計畫主持人</h4><p>由教育委員會先協助處理</p></div>
+          <div class="step warn"><div class="when">時限</div><h4>3 日內協助解決</h4><p>逾期須說明原因；7 日以上未完成由上一級督導介入。結案須申訴人簽署確認。</p></div>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="panel" data-s="生活輔導 關懷 導師 醫院關懷小組">
+          <h3>生活輔導</h3>
+          <p class="small">出現遲到早退、情緒或睡眠改變、連續缺席會議、筆試或里程碑進度落後、經濟困境、親人亡故或重病等情形時啟動。</p>
+          <p class="small" style="margin-top:6px">導師 3 日內了解並輔導 → 7 日內未解決回報計畫主持人 → 轉醫院關懷小組 → 教育訓練委員會。輔導紀錄加密列入個人檔案。</p>
+        </div>
+        <div class="panel" data-s="獎勵 福利 論文 學術活動 指導員 補助">
+          <h3>獎勵與福利</h3>
+          <ul class="small">
+            <li>學術研討會與年會：補助報名費及車馬費 50%，國內單次上限 10,000 元。</li>
+            <li>ACLS、ETTC、AILS、ATLS、APLS+PALS、medical director 等指導員課程：通過者全額補助，全程參與未通過補助一半。</li>
+            <li>論文發表：SCI 原著且通訊作者為本部主治醫師者獎勵 1 萬元並減工時 16 小時；SCI case report 5 千元。</li>
+            <li>國際會議發表：來回機票半價補助。全國競賽前三名、論文口報前三名等另有獎勵。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 合作訓練 -->
+  <section class="sec" id="partner">
+    <div class="sec-h"><span class="k">10</span><h2>合作訓練</h2><span class="src">計畫書第 3 章；附件一、二</span></div>
+    <div class="stack">
+      <div class="grid2">
+        <div class="panel" data-s="合作訓練 甲案 乙案 主訓醫院 合訓醫院">
+          <h3>合作方案</h3>
+          <p class="small"><b>甲案：</b>由本部代主訓醫院招收住院醫師。<br><b>乙案：</b>主訓醫院自行招收住院醫師。</p>
+          <ul class="small" style="margin-top:8px">
+            <li>主訓醫院受訓時間應達總訓練時間 50% 以上。</li>
+            <li>每年至本部訓練不超過 6 個月，在主訓醫院不少於 6 個月。</li>
+            <li>前三年每年至多 6 個月、第四年上半年至多 3 個月至本部訓練。</li>
+            <li>至本部訓練期間，由計畫主持人指派一位教師擔任導師。</li>
+          </ul>
+        </div>
+        <div class="panel" data-s="申請方式 公函 一個月前">
+          <h3>申請方式</h3>
+          <ol class="small">
+            <li>主訓醫院於訓練前一個月以公函薦送，檢附聯合訓練計畫書、期程、代訓人員申請書及相關文件，向本院教學部提出申請。</li>
+            <li>本部評估後呈院長室核定並回函。</li>
+            <li>兩院召開教學溝通協調會議。</li>
+            <li>報到當天攜帶畢業證書、PGY 證書、在職證明及合訓人員申請書至急診部報到。</li>
+          </ol>
+        </div>
+      </div>
+      <div class="panel" data-s="聯絡 教學助理 電話 信箱 地址">
+        <h3>聯絡窗口</h3>
+        <div class="contact" style="margin-top:8px">
+          <span class="k">教學助理</span><span>陳儷</span><span></span>
+          <span class="k">電話</span><span class="mono">04-22052121 分機 15431</span><button class="copy" data-copy="04-22052121#15431">複製</button>
+          <span class="k">電子信箱</span><span class="mono" style="overflow-wrap:anywhere">cmuh18724@gmail.com</span><button class="copy" data-copy="cmuh18724@gmail.com">複製</button>
+          <span class="k">地址</span><span>台中市北區育德路 2 號</span><button class="copy" data-copy="台中市北區育德路2號">複製</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 附件與連結 -->
+  <section class="sec" id="annex">
+    <div class="sec-h"><span class="k">11</span><h2>附件與相關連結</h2><span class="src">附件一至二十九；修訂對照表</span></div>
+    <div class="stack">
+      <div data-s="相關連結 官網 學習歷程 急診醫學會">
+        <h3 style="margin-bottom:10px">相關連結</h3>
+        <div class="links" id="links"></div>
+      </div>
+      <div class="panel" data-s="修訂 第 15 次修訂 115 年 修訂重點">
+        <h3>115 年度修訂重點（第 15 次修訂）</h3>
+        <ul class="small">
+          <li>2.2、2.3.6：明定依能力導向教育精神設定目標，並依計畫成效調整後續課程與訓練結構（PDCA）。</li>
+          <li>6.1.2：修訂導師資格參考條件；7.3：教學時數認定改採新標準。</li>
+          <li>9.6：增列臨床監督與漸進式授權原則。</li>
+          <li>10.1.2：外訓科學習經驗納入 CCC 學習歷程回顧整合。</li>
+          <li>12.2.4、12.2.5：新增 R day 評估與多來源回饋；12.3：學習評估作為漸進授權之依據。</li>
+          <li>附件十二：師資更新。</li>
+        </ul>
+        <p class="note">114 年度（第 14 次）重點：落實 PEC、里程碑逐步更新為新版 27 項、新增學習活動分類架構與時數認定、更新多科課綱評核單。</p>
+      </div>
+      <div data-s="附件 清單 表單">
+        <h3 style="margin-bottom:8px">附件清單 <span class="muted small">（頁碼為計畫書頁碼）</span></h3>
+        <ul class="annex" id="annexList"></ul>
+      </div>
+    </div>
+  </section>
+
+  </main>
+</div>
+<footer class="gutter"><div class="inner">中國醫藥大學附設醫院急診部 · 急診專科醫師訓練計畫（第 15 次修訂，115 年 5 月）。本頁為計畫書互動整理版，條文內容以正式計畫書為準。</div></footer>
+
+<script>
+/* ===== 可自行修改：相關連結（url 留空則顯示為「待設定」） ===== */
+const LINKS = [
+  {t:"訓練計畫書全文（PDF）", d:"第 15 次修訂版完整條文與附件", url:""},
+  {t:"急診部官方網站", d:"科部介紹、最新消息", url:""},
+  {t:"學習歷程與評核系統", d:"EPA、Milestone、Procedure 線上評核", url:""},
+  {t:"醫教會數位學習系統", d:"急診醫學科專區核心課程 Power Cam", url:""},
+  {t:"台灣急診醫學會", d:"專科醫師訓練課程基準、里程碑公告", url:""},
+  {t:"住院醫師招募資訊", d:"遴選資格與報名方式", url:""}
+];
+
+const $ = (s,el=document)=>el.querySelector(s);
+const $$ = (s,el=document)=>[...el.querySelectorAll(s)];
+const esc = s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function seg(container, items, active, onPick){
+  container.innerHTML = items.map(([k,l])=>`<button type="button" data-k="${k}" aria-pressed="${k===active}">${l}</button>`).join("");
+  container.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+    $$("button",container).forEach(x=>x.setAttribute("aria-pressed",x===b));onPick(b.dataset.k);});
+}
+
+/* ---- 五大重症 ---- */
+const CRIT=[["急性腦中風",300,350],["重大外傷",600,650],["急性冠心症",150,200],["敗血性休克",450,500],["到院前心肺功能停止",450,500]];
+$("#crit").innerHTML = CRIT.map(([n,a,b])=>`<div class="range"><span>${n}</span><div class="track"><div class="bar" style="left:${a/700*100}%;width:${(b-a)/700*100}%"></div></div><span class="v">${a}–${b} 例</span></div>`).join("");
+$(".axis .ticks").style.width = (600/700*100)+"%";
+
+/* ---- 六大核心能力 ---- */
+const COMP=[
+ {c:"PC",t:"病人照顧",e:"Patient care",g:["病人症狀輕重緩急之辨識與緊急處置","焦點式的病史詢問及理學檢查","適切且具鑑別性之診斷檢驗及檢查","適時且正確的鑑別診斷","了解藥物機轉與副作用，正確選用藥物與治療","適切安排觀察並適時再次評估","選擇及安排病人適切動向","運用多工能系統運作有效照護病人","急救及緊急處置之技能"],m:["臨床服務中知識與技能的學習","醫療會議中個案報告與討論","病歷寫作的教學與討論","核心課程","急救教育訓練課程","專題演講","聯合討論會"]},
+ {c:"MK",t:"醫學知識",e:"Medical knowledge",g:["基本醫療之知識","急診相關領域之知識","急診相關新知識攝取之能力","急診次專長之基本知識"],m:["教科書（Tintinalli's Emergency Medicine 等）研讀","期刊文獻研讀與討論","核心課程","專題演講","學術研討會"]},
+ {c:"PBLI",t:"從工作中學習及成長",e:"Practice-based learning and improvement",g:["持續改善工作表現，提升急診功能、自我學習及病人照護","描述實證醫學的基本原則","藉嚴謹查證文獻與實證醫學原則改善個人表現","主動追蹤病人後續病程","自我評估，確認可持續改善之處","落實學習計畫，藉回饋與評量持續評估自我表現","參與流程改善計畫，提升急診實證照護"],m:["個案報告與討論","實證醫學訓練","品質監控與案例報告會議","聯合討論會"]},
+ {c:"ICS",t:"人際關係及溝通技巧",e:"Interpersonal and communication skills",g:["以同理心建立醫病關係並有效聆聽","誘導病人表達就診原因與期待，處理病人與家屬衝突","運用溝通技巧減少壓力、衝突及誤解","與弱勢族群及高風險病人家屬有效溝通","面對特殊挑戰：藥癮者、告知壞消息、非預期結果、醫療疏失","對高風險且拒絕治療之病人靈活溝通化解危機","參與同儕溝通障礙事件審查並提出改善建議","確保醫療團隊成員間有效溝通且互相尊重","與跨科部、會診醫師、院外人員、媒體等有效溝通"],m:["倫理與法律討論會","個案報告與討論","臨床服務中團隊合作實作","行政品管會議","組織與急診核心價值的落實"]},
+ {c:"PROF",t:"專業素養",e:"Professionalism",g:["與病人家屬互動展現關懷、誠實、真誠與寬容","展現同理心、正直、尊重與積極回應","了解自身信念與價值觀，維持適當人際關係","為病人提供適當替代醫療方案","始終以病人最佳利益為優先","在複雜情境下分析及處理倫理議題","準時、合宜儀容、適當休息等基本專業責任","維護病人隱私，負責任地使用社群媒體","參加會議、如期完成病例與各項報告","維持健全身心，含健康睡眠","了解自身狀況，必要時尋求協助","以專業及隱私原則處理自己與同事的失能狀況","依機構規範負責處理醫療錯誤"],m:["臨床訓練工作中的學習","同儕間的學習","個案報告中的討論","組織核心價值的落實","臨床訓練工作手冊的落實"]},
+ {c:"SBP",t:"制度下之臨床工作",e:"Systems-based practice",g:["病人安全基本知識並正確執行","遵循標準規範維護工作環境安全","利用系統資源改善病人照護","辨識團隊合作或溝通失效以避免錯誤","參與機構流程改善，促進病人安全","使用分析工具評估醫療品質與安全","了解急診照護團隊成員及角色","適時動用機構資源協助病人照護","提供顧及成本效益之醫療照護","建立部門內病人照護流暢度管理指標","協調系統資源處理複雜醫療狀況","針對流程及營運問題發展解決方案","正確使用急診及全院醫療資訊系統","有效且合乎倫理地運用科技產品","參與及使用醫療決策輔助系統"],m:["病人安全核心課程","團隊合作核心課程","臨床服務中團隊合作實作","聯合討論會學習跨科部合作","品質監控與案例報告會議"]}
+];
+let compK="PC";
+function drawComp(){
+  $("#compTabs").innerHTML = COMP.map(x=>`<button type="button" data-k="${x.c}" aria-pressed="${x.c===compK}"><span class="c">${x.c}</span><span class="t">${x.t}</span></button>`).join("");
+  const x=COMP.find(y=>y.c===compK);
+  $("#compBody").innerHTML = `<div class="grid2"><div><h4>訓練目標 <span class="muted small">${esc(x.e)} · ${x.g.length} 項</span></h4><ol class="small" style="margin-top:6px">${x.g.map(i=>`<li>${i}</li>`).join("")}</ol></div><div><h4>訓練方式</h4><ul class="small" style="margin-top:6px">${x.m.map(i=>`<li>${i}</li>`).join("")}</ul><h4 style="margin-top:14px">評估方式</h4><p class="small">臨床直接與間接觀察、學習里程碑評核、核心案例收集與評核、醫療會議準備與表現、自我學習規劃與成果、專業知識測驗。</p></div></div>`;
+}
+$("#compTabs").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;compK=b.dataset.k;drawComp();});
+drawComp();
+
+/* ---- 四年藍圖 ---- */
+const YEARS={
+ R1:{sub:"第一年住院醫師",stage:"成人急診第一階段：以輕症（檢傷三、四級）循序開始，主要位於外傷區、部分於內科來診區。開始外科學、五官科、內科學、影像、超音波、毒物科訓練。",
+   zone:"外傷區 → 內科區", rot:["外科（PS）","耳鼻喉科","眼科","婦科（GYN）"], dist:["影像醫學","超音波","毒物科","兒科急診"],
+   cert:["ACLS","ETTC"], ms:2, em:2, epa:3, epaNote:"需要時找得到監督者指導下即可實行",
+   goals:["了解急診病人的特性","病史詢問、理學檢查、基礎醫療諮商能力","辨識危險的能力","基礎外科處理能力","基礎影像及超音波判讀與處置","基礎檢驗結果判讀與處置","基礎臨床技術認證（傷口處理、固定等）","基本團隊合作觀念","會診、轉診、診斷書等行政能力","熟悉感染控制流程","了解病人需求的溝通能力"],
+   evals:["基礎外科學","基礎成人急診醫學","基礎影像醫學","基礎超音波學","基礎毒物學","基礎緊急醫療救護學","耳鼻喉科","眼科"],
+   us:"創傷超音波、超音波輔助胸水抽吸、超音波輔助腹水抽吸；R1 結束前取得急診超音波基礎課程認證。",
+   gate:"A"},
+ R2:{sub:"第二年住院醫師",stage:"成人急診第二階段：內科來診區與外傷區，並進階接受部分重症病患處置訓練。開始緊急救護體系、精神、神經、兒科學、婦產科、重症醫學訓練。",
+   zone:"內科區，開始急救室學習班", rot:["精神科","神經內科","兒科學","婦產科"], dist:["緊急醫療救護（EMS）","災難醫學","超音波","兒科急診"],
+   cert:["APLS"], ms:3, em:3, epa:3, epaNote:"需要時找得到監督者指導下即可實行",
+   goals:["急症病人的辨識與決策能力","昂貴影像檢查適應症判斷與基本判讀","進階超音波檢查","進階技術認證：胸管、CVC、脫臼復位等","參與團隊急救並扮演適切成員角色","進階醫療諮商、知情同意、會診協調","死亡診斷書、DNR 簽署、申訴回覆","健保剔退與申覆","完整個案報告與海報製作","熟悉病人安全通報機制"],
+   evals:["進階成人急診醫學","進階影像醫學","進階毒物學","進階超音波學","基礎兒科學","急診婦產科學","急診精神醫學","基礎神經內科學","基礎災難／野外醫學","進階緊急醫療救護"],
+   us:"基礎腹部超音波（含主動脈）、腎臟、肝膽、婦產科子宮外孕與黃體囊腫破裂出血。",
+   extra:"EMS：學會分散式課程 8 小時、消防局隨隊出勤 16 小時、EMS 月會 24 小時。升資深前安排高擬真醫學模擬訓練。",
+   gate:"B"},
+ R3:{sub:"第三年住院醫師",stage:"成人急診第三階段：以進階重症病患處置為主（急救室），並含兒童急診醫學、災難、重症醫學與偏遠地區急診醫療。",
+   zone:"重症區（急救室）", rot:["重症加護（ICU）","偏遠地區醫院急診"], dist:["兒科急診","災難醫學","EMS","超音波"],
+   cert:["ATLS","AHLS 或 AILS"], ms:3.5, em:3.5, epa:3, epaNote:"需要時找得到監督者指導下即可實行",
+   goals:["危急病人急救能力","正確執行五大急症流程（OHCA、AMI、急性中風、重大外傷、嚴重敗血症）之資源運用及領導","侵入性臨床技術處理能力","轉診及院際間病人事務溝通","急救團隊領導能力","指導護理人員、實習醫學生等之教學能力","急救教育訓練課程助教能力"],
+   evals:["高級成人急診醫學","高級影像醫學","高級毒物學","高級超音波學","進階兒科學","進階神經內科學","進階災難／野外醫學","高級緊急醫療救護","基礎重症醫學"],
+   us:"基礎心臟與肺部超音波、超音波輔助 CVC 置放、深靜脈栓塞評估、急救超音波、腸胃道與軟組織超音波；R3 結束前取得進階超音波課程認證。",
+   extra:"完成 24 個月訓練後輪訓偏遠地區醫院急診。",
+   gate:"C"},
+ R4:{sub:"總醫師",stage:"成人急診第四階段（總醫師）：綜理臨床、行政、教學與緊急醫療相關業務，並含行政管理訓練與選修（國際醫療急診醫學、次專長醫學）。",
+   zone:"重症區＋教學行政", rot:["選修：國際醫療急診醫學","選修：次專長醫學"], dist:["行政管理","醫療會議主持","次專長活動"],
+   cert:["ACLS／ETTC instructor 訓練","EMS director 訓練"], ms:4, em:4, epa:4, epaNote:"所有 EPA 均可獨立執行",
+   goals:["大量傷患、災難醫學、毒化災演習規劃","參與研究或期刊論文發表","參與 ACLS、ETTC instructor、EMS director 指導員訓練","熟悉急診相關品管指標","主持醫療會議病例討論","參與部門與院方各式會議","參與部門行政決策與執行","通過急診專科醫師甄試","參與急診次專長活動"],
+   evals:["高級外傷學","高級兒科急救學","進階重症醫學","高級災難／野外醫學","行政管理"],
+   us:"進階超音波應用。",
+   extra:"資深住院醫師於期中評量前安排高擬真模擬，訓練告知壞消息、醫療錯誤、團隊紛爭等複雜情境。",
+   gate:"D"}
+};
+const GATES={
+ A:{t:"晉升內科區",doc:"附件三",when:"R1",conds:["完成已到期程之階段性評核：外科、耳鼻喉科、眼科、毒物科、內科、影像、超音波","上滿內科區學習班 5 班以上","取得 ACLS 證照","成人急診 Milestone 全部達 Level 1.5 以上（平均 Level 2 以上）"],p:"80% 項目達兩次評分 Level 2 以上（需不同教師）",c:"70% 項目達一次評分 Level 2 以上"},
+ B:{t:"晉升急救室",doc:"附件四、二十九",when:"R2",conds:["完成已到期程之階段性評核（15 科）","C 區學習班 5 班以上","取得 ATLS 或 ETTC 證照","成人急診 Milestone 全部達 Level 2 以上（平均 Level 2.5 以上）","通過急救室資格考與學習班評核（見急救室授權與補救流程）"],p:"80% 項目達兩次評分 Level 3 以上",c:"70% 項目達 Level 3 以上"},
+ C:{t:"升總醫師",doc:"附件五",when:"R3",conds:["完成所有期程評核（15 科），未完成者須補完才能考專科","取得 ATLS、ACLS、APLS、AILS 證照","成人急診 Milestone 全部達 Level 3 以上（平均 Level 3.5 以上）"],p:"90% 項目達兩次評分 Level 4 以上",c:"90% 項目達兩次評分 Level 4 以上"},
+ D:{t:"完訓",doc:"附件六",when:"R4",conds:["完成所有期程評核（15 科）","取得 ATLS、ACLS、APLS、AILS 證照","成人急診 Milestone 全部達 Level 4 以上（平均 Level 4 以上）","完訓才能申請專科醫師報考"],p:"全部 23 項，90% 達兩次評分 Level 4 以上",c:"全部 40 項，90% 達兩次評分 Level 4 以上"}
+};
+function meter(v){let h="";for(let i=1;i<=5;i++){h+=`<span class="${v>=i?"on":(v>=i-.5?"half":"")}"></span>`}return `<div class="meter" aria-hidden="true">${h}</div>`}
+let yearK="R1";
+function drawYears(){
+  $("#yrs").innerHTML = Object.entries(YEARS).map(([k,y])=>`<button type="button" class="yr" data-k="${k}" aria-pressed="${k===yearK}"><span class="big">${k}</span><span class="sub">${y.sub}</span></button>`).join("");
+  const y=YEARS[yearK], g=GATES[y.gate];
+  $("#yd").innerHTML = `
+   <div class="yd-head"><h3>${yearK} · ${y.sub}</h3><span class="chip">臨床區域 <b>${y.zone}</b></span></div>
+   <p class="prose small" style="margin-top:6px">${y.stage}</p>
+   <div class="levels">
+     <div class="lv"><div class="k">學習里程碑（六大核心能力）</div><div class="n">≥ L${y.ms}</div>${meter(y.ms)}</div>
+     <div class="lv"><div class="k">急診醫學模式（EM Model）</div><div class="n">≥ L${y.em}</div>${meter(y.em)}</div>
+     <div class="lv"><div class="k">EPA 信賴等級</div><div class="n">≥ L${y.epa}</div>${meter(y.epa)}<div class="k" style="margin-top:6px">${y.epaNote}</div></div>
+   </div>
+   <div class="cols">
+     <div class="panel"><h4>訓練目標</h4><ol class="small" style="margin-top:6px">${y.goals.map(i=>`<li>${i}</li>`).join("")}</ol></div>
+     <div class="stack" style="gap:14px">
+       <div class="panel"><h4>應完成課綱評核</h4><div class="pills" style="margin-top:8px">${y.evals.map(i=>`<span class="pill">${i}</span>`).join("")}</div></div>
+       <div class="panel"><h4>外訓與分散式訓練</h4><p class="small" style="margin-top:4px"><b>外訓／選修：</b>${y.rot.join("、")}</p><p class="small"><b>分散式：</b>${y.dist.join("、")}</p>${y.extra?`<p class="note">${y.extra}</p>`:""}</div>
+       <div class="panel"><h4>證照與超音波</h4><div class="pills" style="margin-top:8px">${y.cert.map(i=>`<span class="tag red">${i}</span>`).join("")}</div><p class="small" style="margin-top:8px">${y.us}</p></div>
+     </div>
+   </div>
+   <div class="gatebox" style="margin-top:14px"><h4>年度關卡：${g.t}檢核 <span class="muted small">（${g.doc}，由導師評核、計畫主持人覆核）</span></h4>
+     <ul class="small">${g.conds.map(i=>`<li>${i}</li>`).join("")}<li>Procedure：${g.p}</li><li>CODE Case Log：${g.c}</li></ul>
+     <p class="small" style="margin-top:6px"><a href="#gates" data-gate="${y.gate}">查看本關卡應評核的 Procedure 與核心個案 →</a></p></div>`;
+}
+$("#yrs").addEventListener("click",e=>{const b=e.target.closest(".yr");if(!b)return;yearK=b.dataset.k;drawYears();});
+$("#yd").addEventListener("click",e=>{const a=e.target.closest("a[data-gate]");if(a){setGate(a.dataset.gate);}});
+drawYears();
+
+/* ---- 核心課程 ---- */
+const CC=[["兒科急症","PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC12+MK"],["簡報技巧、海報論文寫作技巧、如何進行病例報告","PBLI+ICS2"],["影像判讀","PC3+MK"],["大量傷患實作演習","PC8+SBP2+ICS2+MK"],["毒物學：以模擬個案讓學生參與討論如何治療","PC1+PC2+PC3+PC4+PC5+PC6+PC7+MK"],["Sepsis management review","PC1+PC2+PC3+PC4+PC5+PC6+PC7+MK"],["ECG 判讀：跑考及解題","PC3+MK"],["核、毒化災演習實作","PC8+SBP2+ICS2+MK"],["Echo guided procedure（含 echo 指引 CVC 放置）","PC12+PC14+MK"],["超音波案例討論","PC12+MK"],["進階呼吸道處置（工作坊）","PC10+MK"],["DMAT 災難醫學","PC8+SBP2+ICS2+MK"],["EBM review for ACS, CVA and major trauma","PBLI+SBP1+SBP3+MK"],["環境急症：高山症、潛水夫病、中暑、低體溫","PC1+PC2+PC3+PC4+PC5+PC6+PC7+MK"],["新興傳染病、抗生素使用","PC1+PC2+PC3+PC4+PC5+PC6+PC7+MK"],["五官科工作坊","PC9+MK"],["院前救護技巧","SBP2+MK"],["婦科急症","PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC12+MK"],["動向、交班與留觀","PC6+PC7+ICS1+ICS2+MK"],["提升診斷","PC2+PC3+PC4+MK"],["溝通技巧工作坊（SDM、informed consent、告知壞消息）","PROF1+ICS1+MK"],["跨領域團隊技巧、會診、急救團隊","PROF2+ICS2+MK"],["複雜傷口處理","PC9+PC11+PC13+MK"],["實證醫學工作坊","PBLI"]];
+let ccK="ALL";
+function drawCC(){
+  $("#ccTable tbody").innerHTML = CC.map(([n,c],i)=>{const parts=c.split("+");const show=ccK==="ALL"||parts.some(p=>p.replace(/\d+/,"")===ccK);
+    return `<tr class="${show?"":"dim"}"><td class="num">${i+1}</td><td>${n}</td><td><div class="codes">${parts.map(p=>`<span class="tag${p.replace(/\d+/,"")===ccK?" red":""}">${p}</span>`).join("")}</div></td></tr>`}).join("");
+}
+seg($("#ccFilter"),[["ALL","全部"],["PC","PC"],["MK","MK"],["PBLI","PBLI"],["ICS","ICS"],["PROF","PROF"],["SBP","SBP"]],"ALL",k=>{ccK=k;drawCC();});
+drawCC();
+
+/* ---- 等級定義 ---- */
+const LV={
+ ms:{rows:[["Level 1","初學","新進住院醫師的程度"],["Level 2","進階","已有進步，但尚未達中等程度"],["Level 3","勝任","持續進步，達到該次核心能力對住院醫師的大部分要求"],["Level 4","專科","達到訓練目標，代表已可畢業"],["Level 5","教師","超越住院醫師要求，進入專家等級，極少數可達"]],note:"Level 4 為完訓目標而非畢業門檻。階段目標：R1 ≥ L2、R2 ≥ L3、R3 ≥ L3.5、完訓 ≥ L4。"},
+ epa:{rows:[["Level 1","觀察","僅可觀察，不可操作"],["Level 2","直接監督","可在直接監督下執行"],["Level 3","間接監督","需要時找得到監督者指導下即可實行"],["Level 4","獨立執行","可獨立操作執行，事後確認即可"],["Level 5","指導他人","可以指導監督其他資淺學員"]],note:"EM Model 核心個案與核心技術另以 Global Rating Scale 1–7 分評核，並依表現評定 Level 1–5。"}
+};
+function drawLv(k){const d=LV[k];$("#lvBody").innerHTML=`<div class="tbl-wrap"><table><thead><tr><th>等級</th><th>簡稱</th><th>意涵</th></tr></thead><tbody>${d.rows.map(r=>`<tr><td class="mono"><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join("")}</tbody></table></div>`;$("#lvNote").textContent=d.note;}
+$("#lvSeg").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;$$("#lvSeg button").forEach(x=>x.setAttribute("aria-pressed",x===b));drawLv(b.dataset.k);});
+drawLv("ms");
+
+/* ---- 晉升檢核：Procedure / CODE ---- */
+const PROC=["Cardiac pacing","Cardioversion","Cardiopulmonary resuscitation","Central venous access","Control of epistaxis","Dislocation reduction techniques: shoulder / TMJ","Defibrillation","Foreign body removal","Intubation – laryngoscope","Intubation – video assisted","Intubation / airway techniques","LMA","Limb immobilization techniques","Lumbar puncture","Neonatal resuscitation","Paracentesis","Post-resuscitative care","Procedural sedation and analgesia","Pericardiocentesis","Spinal immobilization techniques","Surgical airway","Thoracentesis","Wound closure techniques (complicated)"];
+const PG={A:[5,6,8,13,18,20,23],B:[4,9,10,11,12,14,16,22],C:[1,2,3,7,15,17,19,20,21],D:PROC.map((_,i)=>i+1)};
+const CODE=[["General","IHCA / OHCA"],["General","Major trauma"],["General","Syncope (non-vasovagal)"],["Shock","Cardiogenic shock"],["Shock","Hemorrhagic shock"],["Shock","Septic shock"],["Shock","Spinal shock"],["Shock","Allergic shock"],["Neuro","Meningoencephalitis"],["Neuro","Intracerebral hemorrhage"],["Neuro","Subarachnoid hemorrhage"],["Neuro","Status epilepticus"],["Neuro","Ischemic stroke"],["Neuro","Intracranial injury / traumatic ICH"],["Neuro","Coma (non-trauma, GCS ≤ 8)"],["HEENT","Deep neck infection with airway compromise"],["CV","Congestive heart failure"],["CV","Acute coronary syndrome"],["CV","Myocarditis / endocarditis"],["CV","Cardiac tamponade"],["CV","Aortic dissection / disruption"],["CV","Complete AV block"],["Chest","Asthma / COPD"],["Chest","Pulmonary thromboembolism"],["Chest","Massive hemothorax; pneumothorax"],["Abdomen","Volvulus / intestinal obstruction / intussusception"],["Abdomen","Peritonitis – PPU"],["Abdomen","Ischemic bowel"],["Nephro","Hyperkalemia"],["Nephro","AKI with indication for emergent HD"],["GYN","Ectopic pregnancy"],["GYN","Torsion: testis, ovary"],["GYN","HELLP / eclampsia / preeclampsia"],["GYN","Corpus luteum rupture"],["Toxic","Snake bite"],["Toxic","Poison: medicine (non-BZD)"],["Toxic","Poison: pesticide / herbicide"],["Hema","Peripheral neuropathic emergency (GBS, AIDP, botulism)"],["Meta","Necrotizing fasciitis: Fournier's gangrene"],["Meta","DM emergency: DKA, HHS"]];
+const CG={A:[2,5,7,10,11,14,35,36,37],B:[3,9,13,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,38,39,40],C:[1,2,3,4,5,6,7,8,12,15,16,20,21,22,25,33],D:CODE.map((_,i)=>i+1)};
+let gateK="A";
+function cells(map,n){return ["A","B","C","D"].map(g=>`<td class="ctr">${map[g].includes(n)?`<span class="dot" title="${GATES[g].t}"></span>`:`<span class="dot o"></span>`}</td>`).join("")}
+function drawGate(){
+  const g=GATES[gateK];
+  $("#gateInfo").innerHTML=`<h4>${g.t}檢核 <span class="muted small">${g.doc} · 約於 ${g.when} 完成 · 導師評核、計畫主持人覆核</span></h4><ul class="small">${g.conds.map(i=>`<li>${i}</li>`).join("")}<li><b>Procedure（${PG[gateK].length} 項）：</b>${g.p}</li><li><b>CODE Case Log（${CG[gateK].length} 項）：</b>${g.c}</li></ul>`;
+  const op=$("#onlyReqP").checked, oc=$("#onlyReqC").checked;
+  $("#procT tbody").innerHTML=PROC.map((p,i)=>{const n=i+1,req=PG[gateK].includes(n);if(op&&!req)return"";return `<tr class="${req?"hit":""}"><td class="num">${String(n).padStart(2,"0")}</td><td>${p}</td>${cells(PG,n)}</tr>`}).join("");
+  $("#codeT tbody").innerHTML=CODE.map(([cat,name],i)=>{const n=i+1,req=CG[gateK].includes(n);if(oc&&!req)return"";return `<tr class="${req?"hit":""}"><td class="num">${String(n).padStart(2,"0")}</td><td><span class="tag">${cat}</span> ${name}</td>${cells(CG,n)}</tr>`}).join("");
+}
+function setGate(k){gateK=k;$$("#gateSeg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.k===k));drawGate();}
+seg($("#gateSeg"),Object.entries(GATES).map(([k,g])=>[k,`${g.when} · ${g.t}`]),"A",k=>{gateK=k;drawGate();});
+$("#onlyReqP").addEventListener("change",drawGate);$("#onlyReqC").addEventListener("change",drawGate);
+drawGate();
+
+/* ---- 基本技術及病例數（附件十八） ---- */
+const SK=[["呼吸道技術","氣管內管置放",20,3],["呼吸道技術","快速順序插管",20,3],["呼吸道技術","環甲狀軟骨膜切開術",3,3],["心肺處理技術","胸管置放術",10,3],["心肺處理技術","Pig tail catheter insertion",10,3],["心肺處理技術","肋膜腔積液抽取術",10,2],["心肺處理技術","心臟整流及去顫術",10,3],["心肺處理技術","體外節律器使用",5,3],["心肺處理技術","心包膜積液抽取",2,3],["血循技術","中央靜脈導管注射（內頸靜脈及鎖骨下靜脈）",20,3],["血循技術","股靜脈導管注射（含 double lumen catheter 及 trauma set）",10,3],["血循技術","靜脈切開術及骨針注射",2,3],["腹腔處理技術","腹部超音波檢查（含 FAST）",20,2],["腹腔處理技術","腹腔放液術",10,2],["腹腔處理技術","食道球放置（EB tube insertion）",5,3],["脊椎處理技術","頸椎固定及頸圈放置",5,1],["脊椎處理技術","腰椎穿刺",10,2],["骨科技術","肩關節脫臼之復位",5,1],["骨科技術","肘關節脫臼之復位",2,1],["骨科技術","指或趾關節脫臼之復位",5,1],["耳鼻喉科技術","鼻腔填塞止血",10,1],["耳鼻喉科技術","外耳道異物移除",3,1],["耳鼻喉科技術","鼻腔異物移除",3,1],["耳鼻喉科技術","喉頭（含纖維鏡）異物移除",10,1],["眼科技術","隙裂燈操作",10,1],["眼科技術","結膜腔內異物移除",5,1],["其他","複雜傷口縫合（含韌帶縫合）",20,2],["其他","膿瘍切開引流術",5,2],["其他","恥骨上膀胱引流",1,2],["其他","顳顎關節脫位之復位",5,1]];
+let skK="ALL";
+function drawSK(){$("#skT tbody").innerHTML=SK.filter(r=>skK==="ALL"||String(r[3])===skK).map((r,i,a)=>`<tr><td class="muted small">${i===0||a[i-1][0]!==r[0]?r[0]:""}</td><td>${r[1]}</td><td class="num">${r[2]}</td><td class="ctr"><span class="tag${r[3]===3?" red":""}">R${r[3]}</span></td></tr>`).join("");}
+seg($("#skSeg"),[["ALL","全部"],["1","R1"],["2","R2"],["3","R3"]],"ALL",k=>{skK=k;drawSK();});
+drawSK();
+
+/* ---- 會議週曆 ---- */
+const WEEKLY={1:[["晨會","08:30–09:00"]],2:[["醫療週會","08:30–11:00"]],3:[["晨會","08:30–09:00"]],4:[["醫療週會","08:30–11:00"]],5:[["晨會","08:30–09:00"]]};
+const MONTHLY=[
+ {w:"1",d:2,n:"急診放射聯合討論會",t:"08:30–10:00"},
+ {w:"1",d:5,n:"外傷病例聯合討論會",t:"16:30–17:30"},
+ {w:"2",d:4,n:"毒物科聯合討論會",t:"09:30–10:30"},
+ {w:"3",d:3,n:"ICU 聯合討論會（隔月）",t:"12:20–13:20"},
+ {w:"3",d:5,n:"腦中風會議",t:"07:30–08:30"},
+ {w:"3",d:5,n:"期刊評讀（CAT）",t:"每月第三週週五"},
+ {w:"4",d:3,n:"胸痛中心晨會",t:"07:30–08:30"},
+ {w:"L",d:4,n:"死亡病例討論・醫療品質討論",t:"醫療週會中"},
+ {w:"L",d:4,n:"行政品管會議",t:"11:00–12:00"}
+];
+const DAYS=["","週一","週二","週三","週四","週五"];
+let wkK="1";
+function toMin(t){const m=t.match(/(\d\d):(\d\d)/);return m?+m[1]*60+ +m[2]:9999}
+function drawWeek(){
+  let h="";for(let d=1;d<=5;d++){
+    const items=[...WEEKLY[d].map(([n,t])=>({n,t,mo:false})),...MONTHLY.filter(m=>m.w===wkK&&m.d===d).map(m=>({n:m.n,t:m.t,mo:true}))].sort((a,b)=>toMin(a.t)-toMin(b.t));
+    h+=`<div class="day"><div class="dh">${DAYS[d]}</div><ul>${items.map(i=>`<li class="${i.mo?"mo":""}"><span class="tm">${i.t}</span>${i.n}</li>`).join("")}</ul></div>`;}
+  $("#week").innerHTML=h;
+}
+seg($("#wkSeg"),[["1","第 1 週"],["2","第 2 週"],["3","第 3 週"],["4","第 4 週"],["L","最後一週"]],"1",k=>{wkK=k;drawWeek();});
+drawWeek();
+
+/* ---- 角色 ---- */
+const ROLES=[
+ {t:"計畫主持人",s:"任期 1 年，教委會每年遴選",q:["具教學熱誠之資深主治醫師，以年資 10 年以上急診專科醫師為優先","具醫策會或急診醫學會教師資格","曾任本部導師並曾獲優良導師","具部定教職，或近 3 年以第一或通信作者發表急診相關論文","擔任過主持人、主管或委員會且無不良事蹟","倫理觀念與行為足為表率"],d:["擬訂訓練計畫、教育目標與分層負責規範並督導執行","協調相關科部教學資源","規劃住院醫師逐年學習目標並督導評估","參與住院醫師遴選","督導評核教師、導師及教學助理","每月參與主管會報、主持導師會議"],e:["教委會每半年檢討執行成效","每年年終向教委會報告訓練成果與改善計畫，由全體委員評定適任性","異動時一個月內向急診醫學會及 RRC 報備"]},
+ {t:"協同主持人",s:"1 名，任期 1 年",q:["具醫策會或急診醫學會教師資格","曾任本部專科訓練計畫導師","參與過學會或院方委員會且無不良事蹟","倫理觀念與行為足為表率"],d:["協助計畫主持人推動計畫，提升執行效率與品質"],e:["每半年由計畫主持人提出評估報告","每年由教委會提出適任評估"]},
+ {t:"導師",s:"每位指導 3–5 位住院醫師",q:["具教學熱誠之主治醫師","具醫策會或急診醫學會教師資格","具學會認可之指導員資格或 5 年內有學術論文發表","具備次專長","住院醫師推薦之優良教師"],d:["每週至少 1 小時師生互動，定期舉行師生座談","督導每月完成學習護照、里程碑評估與 EPA 評核","監督病例數與疾病種類之適當性","前一個月與導生訂定學習目標，隔月給予評核回饋","每月參加導師會議","關注疲勞、過勞或成癮等問題並適時輔導，留有加密紀錄"],e:["住院醫師每半年對導師全面評分","計畫主持人每月於導師會議追蹤","教委會每半年評核"]},
+ {t:"教師（一般臨床教師）",s:"所有主治醫師",q:["具醫策會或急診醫學會教師資格與臨床教學能力","具急診醫學會認可之指導員資格","年資滿 3 年以上","倫理觀念與作為足為表率"],d:["當班時指導及監督住院醫師臨床工作品質","協助完成學習護照與評核，留有署名評論","指定住院醫師進行有趣病例報告","參與部門教學活動並達標準教學時數","擔任臨床能力委員會（CCC）評核委員"],e:["住院醫師每年至少一次全面評分","教委會每年評定教學及評核成效","至少每 6 個月參與一次教學檢討會"]},
+ {t:"課綱負責教師",s:"次專長領域資深主治醫師",q:["具醫策會或急診醫學會教師資格","本部發展次專長領域之資深主治醫師或負責人","年資滿 3 年以上"],d:["監督與評核各階段 EPA 評核表","回饋導師及學生學習成效","修訂各課綱不同階段之學習評量表","擔任 CCC 評核委員"],e:["主動提醒導師及住院醫師按時接受評核","每年檢視各課綱 EPA 評核表"]},
+ {t:"教學助理",s:"專任 1 名，另有專科護理師擔任教委會幹事",q:["編制內專任"],d:["彙整學習護照、評估單、雙向回饋單等教學資料","定期提醒教師與導師查核，逾時回報計畫主持人","協助申訴申請與獎勵申請","協助總醫師安排醫療議程與聯繫院外講師","協助收集核心案例及技能個案"],e:[]}
+];
+$("#roles").innerHTML=ROLES.map((r,i)=>`<details${i===0?" open":""}><summary>${r.t}<span class="s">${r.s}</span></summary><div class="db"><div class="grid3" style="gap:18px"><div><h4>資格</h4><ul class="small">${r.q.map(x=>`<li>${x}</li>`).join("")}</ul></div><div><h4>職責</h4><ul class="small">${r.d.map(x=>`<li>${x}</li>`).join("")}</ul></div><div><h4>評估機制</h4>${r.e.length?`<ul class="small">${r.e.map(x=>`<li>${x}</li>`).join("")}</ul>`:`<p class="small muted">由計畫主持人督導評核</p>`}</div></div></div></details>`).join("");
+
+/* ---- 師資 ---- */
+const FAC=[["陳維恭","部主任","副教授","27 年 7 月","急診醫學、外傷醫學、醫務管理"],["林冠合","副主任","副教授","19 年 4 月","急診醫學、基礎醫學研究"],["邱德發","主治醫師","助理教授","26 年 11 月","急診醫學、醫學教育、超音波影像"],["洪東榮","主治醫師","副教授","26 年 11 月","急診醫學、毒物學"],["周致丞","主治醫師","副教授","18 年 4 月","急診醫學、醫學教育"],["陳俊宏","主治醫師","","17 年 4 月","急診醫學、毒物學"],["許太乙","主治醫師","助理教授","17 年 4 月","急診醫學、臨床研究"],["黃錦源","主治醫師","","16 年 5 月","急診醫學、災難／野外醫學"],["陳航正","主治醫師","","16 年 5 月","急診醫學、野外醫學"],["鄭凱文","主治醫師","","15 年 4 月","急診醫學、醫務管理、醫學教育"],["余養正","主治醫師","","15 年 4 月","急診醫學、醫療管理"],["曾韻容","主治醫師","","15 年 4 月","急診醫學、醫學法律"],["林蔚玲","主治醫師","","14 年 3 月","急診醫學"],["林家葳","主治醫師","","13 年 5 月","急診醫學、醫學法律"],["余紹華","主治醫師","助理教授","13 年 5 月","急診醫學、基礎醫學、模擬教學"],["吳師豪","主治醫師","","13 年 5 月","急診醫學、超音波影像"],["劉健佑","主治醫師","","12 年 5 月","急診醫學、EMS、醫學教育、模擬教學"],["林韋均","主治醫師","","12 年 5 月","急診醫學、超音波影像"],["黃家崙","主治醫師","","12 年 5 月","急診醫學、臨床研究"],["劉彥宏","主治醫師","","12 年 5 月","急診醫學、實證醫學、醫學教育、模擬教學"],["楊鎧蔚","主治醫師","","11 年 5 月","急診醫學、毒物學"],["謝易達","主治醫師","","11 年 5 月","急診醫學、醫學教育"],["穆函蔚","主治醫師","","10 年 5 月","急診醫學、毒物學"],["潘麒亘","主治醫師","","8 年 11 月","急診醫學、毒物學"],["張裕鑫","主治醫師","","6 年 10 月","急診醫學"],["陳彥儒","主治醫師","","5 年 10 月","急診醫學、EMS"],["朱彥蓉","主治醫師","","4 年 10 月","急診醫學、醫學教育"],["高志豪","主治醫師","","3 年 10 月","急診醫學、重症醫學"],["朱昌宏","主治醫師","","3 年 10 月","急診醫學、EMS、醫學教育"],["蔡孟峰","主治醫師","","2 年 11 月","急診醫學、超音波"],["張長元","主治醫師","","2 年 11 月","急診醫學、重症醫學"],["王子權","主治醫師","","2 年 11 月","急診醫學、超音波"],["陳如佳","主治醫師","","2 年 11 月","急診醫學"],["邱彥維","主治醫師","","2 年 11 月","急診醫學、EMS、超音波"],["呂雙宇","主治醫師","","1 年 10 月","急診醫學、EMS"],["黃弘欣","主治醫師","","1 年 10 月","急診醫學、EMS"],["林映辰","主治醫師","","0 年 10 月","急診醫學"],["許雅棠","主治醫師","","0 年 10 月","急診醫學"],["陳韋勳","主治醫師","","0 年 10 月","急診醫學"],["林昱均","主治醫師","","0 年 10 月","急診醫學"]];
+const FSPEC=[["ALL","全部"],["醫學教育","醫學教育"],["毒物","毒物學"],["超音波","超音波"],["EMS","EMS"],["災難|野外","災難／野外"],["模擬","模擬教學"],["重症","重症醫學"],["研究|實證","研究與實證"],["管理|法律","管理與法律"]];
+let facK="ALL";
+function drawFac(){const re=facK==="ALL"?null:new RegExp(facK);const rows=FAC.filter(f=>!re||re.test(f[4]));
+  $("#facT tbody").innerHTML=rows.map(f=>`<tr><td><b>${f[0]}</b></td><td>${f[1]}</td><td>${f[2]||'<span class="muted">—</span>'}</td><td class="num">${f[3]}</td><td class="small">${f[4]}</td></tr>`).join("");
+  $("#facCount").textContent=facK==="ALL"?`共 ${FAC.length} 位`:`${rows.length} / ${FAC.length} 位`;}
+seg($("#facSeg"),FSPEC,"ALL",k=>{facK=k;drawFac();});
+drawFac();
+
+/* ---- 附件與連結 ---- */
+const ANNEX=[["一","合作訓練甲案訓練施行細則",94],["二","合作訓練乙案訓練施行細則",96],["三","晉升內科區導師檢核表",97],["四","晉升急救室導師檢核表",99],["五","升總醫師導師檢核表",101],["六","完訓導師檢核表",103],["七","台灣急診醫學臨床執業模式",106],["八","醫學擬真模擬考評估表",140],["九","急診醫學科專科訓練醫師核心課程參考",142],["十","Tintinalli's Emergency Medicine 學習歷程表",169],["十一","急診部內及圖書館急診醫學相關期刊",182],["十二","急診醫學部師資",184],["十三","急診部學術活動回饋記錄表",185],["十四","急診病歷品質查核表",186],["十五","急診部住院醫師申訴申請單",187],["十六","住院醫師導生座談紀錄單",188],["十七","急診部住院醫師外訓心得報告表",189],["十八","急診基本技術及病例數一覽表",190],["十九","急診教學會議報告評核表",191],["二十","住院醫師訓練計畫主持人評估表",192],["二十一","導師評核表",193],["二十二","教師評估表",194],["二十三","住院醫師訓練計畫主持人自評表",195],["二十四","導師自評表",196],["二十五","教師自評表",197],["二十六","輪訓或分散式訓練課程六大核心能力 Milestone 評估表",198],["二十七","課綱評核單",203],["二十八","住院醫師國際醫療實務訓練實施計畫",228],["二十九","住院醫師急救室授權與補救流程",230]];
+$("#annexList").innerHTML=ANNEX.map(a=>`<li><span class="no">附件${a[0]}</span><span>${a[1]}</span><span class="pg">p.${a[2]}</span></li>`).join("");
+$("#links").innerHTML=LINKS.map(l=>l.url?`<a class="lk" href="${esc(l.url)}" target="_blank" rel="noopener"><span><b>${l.t}</b><br><span class="d">${l.d}</span></span><span class="go">↗</span></a>`:`<div class="lk off"><span><b>${l.t}</b><br><span class="d">${l.d}</span></span><span class="d">連結待設定</span></div>`).join("");
+
+/* ---- 複製 ---- */
+document.addEventListener("click",e=>{const b=e.target.closest(".copy");if(!b)return;const v=b.dataset.copy;
+  const done=()=>{const o=b.textContent;b.textContent="已複製";setTimeout(()=>b.textContent=o,1400)};
+  try{navigator.clipboard.writeText(v).then(done,()=>sel(b));}catch(err){sel(b)}
+  function sel(btn){const s=btn.previousElementSibling;const r=document.createRange();r.selectNodeContents(s);const w=getSelection();w.removeAllRanges();w.addRange(r);}
+});
+
+/* ---- 章節導覽：目前位置 ---- */
+const secs=$$("section.sec"), tocA=$$("#toc a");
+function spy(){let cur=secs[0].id;for(const s of secs){if(s.getBoundingClientRect().top<140)cur=s.id}
+  tocA.forEach(a=>{const on=a.getAttribute("href")==="#"+cur;a.classList.toggle("on",on);if(on&&innerWidth<=860){const n=$("#toc");const l=a.offsetLeft-n.clientWidth/2+a.clientWidth/2;n.scrollTo({left:l,behavior:"auto"})}});}
+addEventListener("scroll",()=>requestAnimationFrame(spy),{passive:true});spy();
+
+/* ---- 搜尋 ---- */
+function buildIndex(){
+  const idx=[];
+  $$("[data-s]").forEach(el=>{const sec=el.closest("section.sec");if(!sec)return;
+    const h=el.querySelector("h3,h4,td b");const title=(h?h.textContent:el.dataset.s.split(" ")[0]).trim();
+    idx.push({sec:$(".sec-h h2",sec).textContent,title,text:(el.dataset.s+" "+el.textContent).replace(/\s+/g," "),go:()=>el});});
+  Object.entries(YEARS).forEach(([k,y])=>idx.push({sec:"四年訓練藍圖",title:`${k} · ${y.sub}`,text:[k,y.sub,y.stage,y.zone,y.goals,y.evals,y.cert,y.rot,y.dist,y.us,y.extra||""].flat().join(" "),go:()=>{yearK=k;drawYears();return $("#yd")}}));
+  COMP.forEach(c=>idx.push({sec:"宗旨與核心能力",title:`${c.t}（${c.c}）`,text:[c.c,c.t,c.e,c.g,c.m].flat().join(" "),go:()=>{compK=c.c;drawComp();return $("#compBody")}}));
+  ROLES.forEach((r,i)=>idx.push({sec:"師資與組織",title:r.t,text:[r.t,r.s,r.q,r.d,r.e].flat().join(" "),go:()=>{const d=$$("#roles details")[i];d.open=true;return d}}));
+  FAC.forEach(f=>idx.push({sec:"師資與組織",title:`${f[0]}　${f[1]}`,text:f.join(" "),go:()=>{facK="ALL";$$("#facSeg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.k==="ALL"));drawFac();return [...$$("#facT tbody tr")].find(tr=>tr.textContent.includes(f[0]))}}));
+  PROC.forEach((p,i)=>idx.push({sec:"晉升檢核與 Case Log",title:`Procedure ${String(i+1).padStart(2,"0")} ${p}`,text:p,go:()=>{$("#onlyReqP").checked=false;drawGate();return $$("#procT tbody tr")[i]}}));
+  CODE.forEach((c,i)=>idx.push({sec:"晉升檢核與 Case Log",title:`CODE ${String(i+1).padStart(2,"0")} ${c[1]}`,text:c.join(" "),go:()=>{$("#onlyReqC").checked=false;drawGate();return $$("#codeT tbody tr")[i]}}));
+  CC.forEach((c,i)=>idx.push({sec:"訓練課程",title:`核心課程 ${i+1}：${c[0]}`,text:c.join(" "),go:()=>$$("#ccTable tbody tr")[i]}));
+  SK.forEach(s=>idx.push({sec:"晉升檢核與 Case Log",title:`${s[1]}（${s[2]} 例，R${s[3]}）`,text:s.join(" "),go:()=>{skK="ALL";$$("#skSeg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.k==="ALL"));drawSK();return [...$$("#skT tbody tr")].find(tr=>tr.textContent.includes(s[1]))}}));
+  return idx;
+}
+const INDEX=buildIndex();
+const q=$("#q"), res=$("#results");
+function hl(s,term){const i=s.toLowerCase().indexOf(term.toLowerCase());if(i<0)return esc(s.slice(0,60));const a=Math.max(0,i-24);return (a?"…":"")+esc(s.slice(a,i))+"<mark>"+esc(s.slice(i,i+term.length))+"</mark>"+esc(s.slice(i+term.length,i+term.length+40))+"…";}
+let hits=[];
+q.addEventListener("input",()=>{const t=q.value.trim();if(!t){res.hidden=true;return}
+  const terms=t.split(/\s+/);hits=INDEX.filter(x=>terms.every(w=>(x.title+" "+x.text).toLowerCase().includes(w.toLowerCase()))).slice(0,12);
+  res.innerHTML=hits.length?hits.map((h,i)=>`<button type="button" data-i="${i}"><div class="rs">${h.sec}</div><div class="rt">${esc(h.title)}</div><div class="rx">${hl(h.text,terms[0])}</div></button>`).join(""):`<div class="none">找不到「${esc(t)}」，請換個關鍵字。</div>`;
+  res.hidden=false;});
+res.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const el=hits[+b.dataset.i].go();res.hidden=true;
+  if(el){el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"center"});el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash");}});
+q.addEventListener("keydown",e=>{if(e.key==="Escape"){res.hidden=true;q.blur()}if(e.key==="Enter"){const f=res.querySelector("button");if(f)f.click()}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.hidden=true;});
+</script>
+
+</body>
+</html>
